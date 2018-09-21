@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Pet Friend</title>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="animales, perro, gato, alquilar, adoptar">
-	<meta name="author" content="Allen Edv, Diego Camilo, Mikel Calvo, Sandra Lopez">
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
-	<link href = "https://fonts.googleapis.com/css?family= Quicksand " rel = "stylesheet">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="general.css" rel="stylesheet" type="text/css">
+<link href="tablet.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)"/>
+<link href="movil.css" rel="stylesheet" type="text/css" media="screen and (max-width: 500px)"/>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/main.js"></script>
+<title>.:: Pet Friend ::.</title>
 </head>
 <body>
-	<header>
-		<div class="wrapper">
-			<nav>
-				<div class="logo">
-					<img src="../img/logo.png">
+<div class="wrapper">
+      <!--  <header class="main-head">The header</header>-->
+		<nav class="main-nav">
+						<div class="topnav" id="myTopnav">
+						<img class="imglogo" src="imagenes/logo.png">
+						
+							<a href="#home" class="active">Animales</a>
+							<a href="#news">Quiénes somos</a>
+							<a href="#contact">Donar</a>
+							<a href="#about">Contacto</a>
+							<div class="topnav-right">
+							<a href="#micuenta">Mi Cuenta</a>
+							<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div></div>
+	</nav>
+       <!-- <nav class="main-nav">
+            <ul>
+                <li><a href="">Menu1</a></li>
+                <li><a href="">Menu2</a></li>
+                <li><a href="">Menu3</a></li>
+            </ul>
+        </nav>-->
+		<!--<div class="ad">Advertising
+		<img src="imagenes/cerdito.jpg" alt="Cerdito de lana" />
+		<figcaption>Cerdito de lana</figcaption></div>-->
+        <article class="content">
+            <h1>Título del artículo principal</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article> 
+				<div class="slideshow">
+				<ul class="slider">
+					<li><img src="img/pets.jpg" alt=""></li>
+					<li><img src="img/pets2.jpg" alt=""></li>
+					<li><img src="img/pets3.jpg" alt=""></li>
+					<li><img src="img/pets4.jpg" alt=""></li>
+				</ul>
+				
+				<ol class="pagination"></ol>
+			
+				<div class="left">
+					<span class="fa fa-chevron-left"></span>
 				</div>
-				<div class="menu">
-					<ul>
-						<li><a href="">Animales</a></li>
-						<li><a href="">Quienes somos</a></li>
-						<li><a href="">Donar</a></li>
-						<li><a href="">Contácto</a></li>
-					</ul>
+				<div class="right">
+					<span class="fa fa-chevron-right"></span>
 				</div>
-				<div class="mi_cuenta">
-					<ul>
-						<li><a href="" class="login">Mi Cuenta</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<div class="wrapper">
-	<main>
-		<article class="video">
-			<video autoplay loop>
-				<source src="../video/video.mp4" type="video/mp4">
-			</video>
-		</article>
-		<article class="slide">
-			
-		</article>
-		<article class="exp">
-			
-		</article>
-
-	</main>
-	<footer>
-		<div class="aviso_legal">
-			
-		</div>
-		<div class="redes_sociales">
-			
-		</div>
-		<div class="propiedad">
-			
-		</div>
-	</footer>
-	</div>
-	
+			</div>
+       <!-- <aside class="side">Sidebar
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></aside>-->
+        <footer class="main-footer">The footer</footer>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
