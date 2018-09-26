@@ -1,0 +1,384 @@
+/**************************************************
+					FUENTES
+*****************************************************/
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Medium.eot');
+  src: url('../fonts/Quicksand-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Medium.woff2') format('woff2'),
+    url('../fonts/Quicksand-Medium.woff') format('woff'),
+    url('../fonts/Quicksand-Medium.ttf') format('truetype'),
+    url('../fonts/Quicksand-Medium.svg#Quicksand-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Bold.eot');
+  src: url('../fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Bold.woff2') format('woff2'),
+    url('../fonts/Quicksand-Bold.woff') format('woff'),
+    url('../fonts/Quicksand-Bold.ttf') format('truetype'),
+    url('../fonts/Quicksand-Bold.svg#Quicksand-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Light.eot');
+  src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Light.woff2') format('woff2'),
+    url('../fonts/Quicksand-Light.woff') format('woff'),
+    url('../fonts/Quicksand-Light.ttf') format('truetype'),
+    url('../fonts/Quicksand-Light.svg#Quicksand-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.eot');
+  src: url('../fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+    url('../fonts/Quicksand-Regular.woff') format('woff'),
+    url('../fonts/Quicksand-Regular.ttf') format('truetype'),
+    url('../fonts/Quicksand-Regular.svg#Quicksand-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**************************************************
+					PRESETS
+*****************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*****************************************************************
+						COLORES
+******************************************************************/
+/*
+#bd94c4  fondo del menu
+#9b88b7
+#b8bddb
+#9b88b7
+#5e548e
+#221841
+#404041
+#6d6e70
+#bbbdc0
+*/
+
+/**************************************************
+***************************************************
+					ACÁ COMIENZA INDEX
+***************************************************
+*****************************************************/
+body{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	flex-direction: column;
+}
+	header{
+		position: fixed;
+		width: 100%;
+    	height: 55px;
+    	background-color: #bd94c4;
+    	z-index: 9;
+    	overflow: hidden;
+	}
+		div.wrapper{
+			max-width: 90%;
+			margin: 0 auto;
+			font: 0.8em 'Quicksand', sans-serif;
+		}
+			div.w1{
+				height: 100%;
+				/*background-color: #333;*/
+			}
+				nav{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+				}
+					div.logo{
+						width: 20%;
+					}
+						img.img_logo{
+							max-width: 85%;
+						}
+					div.menu{
+						height: 100%;
+						width: 65%;
+						padding-left: 5%;
+						/*background-color: #333;*/
+					}
+						ul{
+							list-style-type: none;
+    						margin: 0;
+    						padding: 0;
+    						overflow: hidden;
+						}
+							li{
+								float: left;
+							}
+								li 	a{
+									display: block;
+    								color: white;
+    								text-align: center;
+    								padding: 20px 16px;
+    								text-decoration: none;
+									font-weight: 800;
+
+								}
+								li a:hover {
+    								background-color: #5E548E;
+								}
+
+					div.mi_cuenta{
+						height: 100%;
+						width: 15%;
+						background-color: #5E548E;
+					}
+						ul{
+
+						}
+							li{
+
+							}
+								a.login{
+									padding: 20px 60px;
+								}
+								li a.login:hover {
+									/*background-color: #221841;*/
+								}
+
+/*******************************************************
+						MAIN
+********************************************************/
+main{
+
+}
+	div.w2{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+/*********************************************************
+						SLIDER
+**********************************************************/
+
+article.slideshow{
+	width: 100%;
+	position: relative;
+}
+ul.slider li, ul{
+	width: 100%;
+}
+ul.slider li{
+	overflow: hidden;
+}
+ul.slider li img{
+	width: 100%;
+}
+ol.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+ol.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #bd94c4;
+	cursor: pointer;
+}
+div.left, .right{
+	position: absolute;
+	top: 210px;
+	height: 12%;
+    width: 4.5%;
+	background-color: #fdfdfd4a;
+    border-radius: 10px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 8;
+}
+div.left{
+	left: 10px;
+}
+div.right{
+	right: 10px;
+}
+@media screen and (max-width: 600px){
+.left, .right{
+		font-size: 30px;
+	}
+		.slider li img{
+		width: 600px;
+	}
+	.pagination{
+		display: none;
+	}
+}
+
+/*********************************************************
+						TXT
+**********************************************************/
+hr{
+	width: 75%;
+	margin: 0 auto;
+}
+article.txt{
+	margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+}
+	p{
+		font-size: 30px;
+		padding: 25px;
+	}
+    span{
+        font-family: sans-serif;
+    }
+	/*blockquote {
+		  background: #f9f9f9;
+		  border-left: 10px solid #ccc;
+		  margin: 1.5em 10px;
+		  padding: 0.5em 10px;
+		  quotes: "\201C""\201D""\2018""\2019";
+		}
+		blockquote:before {
+		  color: #ccc;
+		  content: open-quote;
+		  font-size: 4em;
+		  line-height: 0.1em;
+		  margin-right: 0.25em;
+		  vertical-align: -0.4em;
+		}
+		blockquote p {
+		  display: inline;
+		}*/
+/*********************************************************
+						VIDEO
+**********************************************************/
+	article.video{
+        text-align: center;
+
+	}
+		video{
+			margin-top: 30px;
+			max-width: 70%;
+		}
+
+/*********************************************************
+						OPINIONES
+**********************************************************/
+article.exp{
+	margin-top: 30px;
+	background-color: #BD94C4;
+    display: flex;
+}
+	div.miexp{
+		max-width: 50%;
+    	padding: 35px;
+		height: auto;
+		text-align: justify;
+		display: flex;
+	}
+		div.exp_img{
+			width: 30%;
+		    /* float: left; */
+		    /* margin-top: 50px; */
+
+		}
+			img.op{
+				max-width: 100%;
+				border-radius: 100px;
+				border: solid 5px #5E548E;
+			}
+		div.exp_txt{
+			width: 60%;
+			/* float: right; */
+			/* padding: 22px; */
+		    margin-left: 50px;
+		    text-align: justify;
+		}
+			h3.experiencia{
+				font-size: 18px;
+    			color: #fff;
+			}
+/*********************************************************
+						FOOTER
+**********************************************************/
+footer{
+	background-color: #221841;
+	height: 80px;
+	font: 0.8em 'Quicksand', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+	div.aviso_legal{
+
+	}
+	div.redes_sociales{
+
+	}
+	div.propiedad{
+
+	}
