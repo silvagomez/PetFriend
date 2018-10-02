@@ -445,3 +445,59 @@ article.load{
     width: 100%;
     /* padding: 10px; */
 }
+
+/**************************************************
+***************************************************
+***************************************************
+					ACÁ COMIENZA CONTACTO
+***************************************************
+***************************************************
+****************************************************/
+article.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+    div.cancall{
+        text-align: center;
+        width: 40%;
+    }
+
+    div.cancall img{
+        max-width: 100%;
+    }
+    div.formulario{
+        width: 40%;
+        padding: 10px;
+        display:block;
+        margin:0 auto;
+
+    }
+        form{
+            margin:0 auto;
+            width:400px;
+        }
+        label {
+            display:block;
+            margin-top:20px;
+            letter-spacing:1px;
+        }
+
+        input, textarea {
+            width:380px;
+            height:30px;
+            background:#bbbdc0;
+            border:2px solid #b8bddb;
+            padding:10px;
+            margin-top:5px;
+            color:#333;
+        }
+
+        textarea {
+            height:150px;
+        }
+article.mapa{
+    text-align: center;
+    margin: 15px;
+}

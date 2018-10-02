@@ -22,14 +22,14 @@
 		<div class="wrapper w1">
 			<nav>
 				<div class="logo">
-					<img class="img_logo" src="../img/logo.png">
+					<a href="home.html"><img class="img_logo" src="../img/logo.png"></a>
 				</div>
 					<div class="menu">
 						<ul>
-							<li><a href="">Animales</a></li>
-							<li><a href="">Quienes somos</a></li>
-							<li><a href="">Donar</a></li>
-							<li><a href="">Contácto</a></li>
+							<li><a href="animales.html">Animales</a></li>
+							<li><a href="somos.html">Quienes somos</a></li>
+							<li><a href="donar.html">Donar</a></li>
+							<li><a href="contacto.html">Contácto</a></li>
 						</ul>
 					</div>
 					<div class="mi_cuenta">
@@ -42,11 +42,25 @@
 	</header>
 	<div class="wrapper w2">
 		<main>
-            <article class="">
-
-            </article>
-
-
+			<article class="contact">
+				<div class="cancall">
+					<img src="../img/contacto.jpg" alt="">
+				</div>
+					<div class="formulario">
+						<form>
+							<label for="nombre">Nombre:</label>
+							<input id="nombre" name="nombre" placeholder="Nombre completo">
+							<label for="email">Email:</label>
+							<input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+							<label for="mensaje">Mensaje:</label>
+							<textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+							<button type="button" name="button">Enviar</button>
+						</form>
+					</div>
+			</article>
+			<article class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1727.5062085312447!2d-2.940599625698522!3d43.26593214735606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1538043067531" width="1024" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</article>
 		</main>
 	</div>
 	<footer>
