@@ -126,6 +126,7 @@ body{
 	display: flex;
 	/*flex-wrap: wrap;*/
 	flex-direction: column;
+    height: 100%;
 }
 /*******************************************************
 						HEADER
@@ -551,8 +552,7 @@ article.contact{
 
 div.w3{
 	background-color: #BD94C4;
-    background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
     font: 0.9em 'Quicksand', sans-serif;
@@ -564,12 +564,6 @@ div.w3{
 			img.img_logo2{
 				width: 330px;
 			}
-            /*
-	main{
-		width: 100%;
-		height: 500px;
-		margin-top: 0px;
-	}*/
 		div.gemelos{
 			width: 80%;
 			margin:0 auto;
@@ -580,16 +574,12 @@ div.w3{
 
 			section.pantalla_central{
 				width: 45%;
-				background-color: rgba(255, 255, 255, 0.3);;
+				background-color: rgba(255, 255, 255, 0.3);
 				height: 350px;
 				border-radius: 10px;
 				margin: 0 auto;
 			}
-            /*
-				article.titulo_sesion{
-					align-self: center;
-					justify-content: center;
-				}*/
+
 				article.titulo_sesion h2{
 					text-align: center;
 					padding-top: 30px;
@@ -668,5 +658,123 @@ div.w3{
                     		font-family: 'Quicksand';
                     		margin-left: 5px;
                 	    	color: #fff;
-                    		padding: 32px;    
+                    		padding: 32px;
                 		}
+/*********************************************************
+**********************************************************
+**********************************************************
+					ACÁ COMIENZA REGISTRO
+**********************************************************
+**********************************************************
+***********************************************************/
+div.w4{
+	background-color: #BD94C4;
+    /* background-attachment: fixed; */
+    width: 100%;
+    font: 0.9em 'Quicksand', sans-serif;
+}
+section.pa1{
+	width: 35%;
+	height: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+    margin-bottom: 50px;
+	border-radius: 10px;
+    color: #fff;
+    padding-bottom: 30px;
+
+}
+
+	article.titulo_central{
+			align-self: center;
+			justify-content: center;
+	}
+
+	article.titulo_central h2{
+		font-family: 'Quicksand';
+		text-align: center;
+		padding-top: 30px;
+		font-size: 25px;
+		color: #fff;
+		text-shadow:2px 2px #504b51;
+	}
+
+	article.datos{
+        display: block;
+		margin-top: 20px;
+    	margin-left: 30px;
+
+	}
+
+        div.div_datos{
+
+        }
+
+            input.inpunt_basico{
+                margin-top: 5px;
+                width: 92%;
+                height: 35px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: none;
+                margin-bottom: 20px;
+            }
+
+			input.input_fecha{
+				margin-top: 5px;
+			    width: 92%;
+			    height: 35px;
+			    border-radius: 5px;
+			    padding-left: 15px;
+			    border: none;
+			    margin-bottom: 20px;
+                color: #757575;
+			}
+
+		div.div_sexo{
+			display: flex;
+		}
+
+			input.input_sexo{
+				margin-top: 5px;
+				width: 15px;
+			    height: 35px;
+			    border-radius: 5px;
+			    padding-left: 15px;
+			    border: none;
+			    margin-bottom: 20px;
+				cursor: pointer;
+            }
+
+
+		div.div_sexo label{
+			margin-top: 15px;
+			margin-right: 15px;
+		}
+
+			select.busqueda_provincia{
+				margin-top: 5px;
+			    width: 95%;
+			    height: 35px;
+			    border-radius: 5px;
+			    padding-left: 15px;
+			    border: none;
+			    margin-bottom: 20px;
+			    color: #757575;
+            }
+
+			div.datos label{
+				font-size: 14px;
+			    font-family: quicksand;
+
+			}
+
+			div.terminos{
+                width: 100%;
+
+			}
+
+				div.terminos label{
+					font-size: 12px;
+					margin-left: -5px;
+				}
