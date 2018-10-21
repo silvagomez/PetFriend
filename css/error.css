@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/****************************************/
+body {
+    background-color: #bbbdc0;
+}
+
+div.error {
+    height: 100vh;
+    overflow: hidden;
+}
+
+div.logo {
+    margin: 30px auto;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+}
+
+img.lo {
+    width: 50%;
+    height: auto;
+}
+
+div.cuerpo {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.fondo {
+    align-self: flex-end;
+    max-width: 36%;
+    height: auto;
+}
+
+img.fonfot {
+    width: 100%;
+    height: auto;
+}
+
+div.texto {
+    align-self: flex-start;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-top: -9%; */
+}
+
+img.err {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    width: 60%;
+    font-family: quicksand;
+    font-size: 1em;
+    /* text-align: justify; */
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+span.ops {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+}
