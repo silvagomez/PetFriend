@@ -996,3 +996,142 @@ div.txt_adopt{
 **********************************************************
 **********************************************************
 ***********************************************************/
+
+/*********************************************************
+**********************************************************
+**********************************************************
+					ACÁ COMIENZA PERFIL
+**********************************************************
+**********************************************************
+***********************************************************/
+
+div.div_gemelos{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 60px 0px;
+}
+
+section.pantalla_central2{
+    background-color: rgba(187, 189, 192, 0.3);
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid #b8bddb;
+    box-shadow: 0px 1px 3px #404041;
+    padding: 15px;
+}
+
+section.section_izq{
+    width: 70%;
+}
+
+hr.hr_uno{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+article.datos_uno{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+div.column{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+div.div_datosp{
+    width: 100%;
+    text-align: right;
+}
+
+label.label_perfil{
+    display: inline-block;
+    width: 125px;
+    text-align: left;
+}
+
+input.input_datos{
+    width: 240px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+input.btn_cambios{
+    float: right;
+    /* display: block; */
+    /* margin-right: 56px; */
+    margin-top: 10px;
+    width: 140px;
+    height: 35px;
+    font-weight: bold;
+    background-color: #5e548e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px #504b51;
+}
+
+section.section_drch{
+        width: 20%;
+        background-color: #5e548e;
+        margin: 0 0 0 1px;
+
+    }
+
+div.i_perfil{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-top: 40px; */
+}
+div.i_perfil .fa-user{
+    font-size: 10em;
+    color: white;
+}
+
+.p_nombre h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFF;
+    /* margin-top: 15px; */
+}
+
+div.p_location {
+    text-align: center;
+    color: #fff;
+}
+
+.p_location i {
+    display: inline-block;
+    margin: 2px;
+    font-size: 1em;
+}
+
+.p_location h3 {
+    display: inline-block;
+}
+
+div.p_descripcion p {
+    text-align: justify;
+    margin: 10px 20px;;
+    color: #fff;
+}
+
+section.section_drch div.redes_sociales {
+    text-align: center;
+}
