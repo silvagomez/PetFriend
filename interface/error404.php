@@ -25,7 +25,7 @@
 
         <div class="error">
             <div class="logo">
-                <a href="home.html"><img class="lo" src="../img/logo.png"></a>
+                <a href="home.php"><img class="lo" src="../img/logo.png"></a>
 		    </div>
 
             <div class="cuerpo">

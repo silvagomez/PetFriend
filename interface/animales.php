@@ -23,19 +23,19 @@
 		<div class="wrapper w1">
 			<nav>
 				<div class="logo">
-					<a href="home.html"><img class="img_logo" src="../img/logo.png"></a>
+					<a href="home.php"><img class="img_logo" src="../img/logo.png"></a>
 				</div>
 					<div class="menu">
 						<ul>
-							<li><a href="contacto.html">Contácto</a></li>
-							<li><a href="donar.html">Donar</a></li>
-							<li><a href="animales.html">Animales</a></li>
-							<!-- <li><a href="somos.html">Quienes somos</a></li> -->
+							<li><a href="contacto.php">Contácto</a></li>
+							<li><a href="donar.php">Donar</a></li>
+							<li><a href="animales.php">Animales</a></li>
+							<!-- <li><a href="somos.php">Quienes somos</a></li> -->
 						</ul>
 					</div>
 					<div class="mi_cuenta">
 						<ul>
-							<li><a href="cuenta.html" class="login">Cuenta</a></li>
+							<li><a href="cuenta.php" class="login">Cuenta</a></li>
 						</ul>
 					</div>
 			</nav>
@@ -176,8 +176,8 @@
                             </p>
                          </div>
 						 <div class="botones">
-							<a href="reservar.html"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
-							<a href="adoptar.html"> <button type="button" name="" class="btn_adop">Adóptalo</button></a>
+							<a href="reservar.php"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
+							<a href="adoptar.php"> <button type="button" name="" class="btn_adop">Adóptalo</button></a>
 		                 </div>
                     </div>
                 </div>
@@ -193,23 +193,23 @@
 
 			<div class="wfooter aviso_legal">
 				<p class="titulillo">muuu@petfriend.com</p><br>
-				<a href="cookies.html" class="a_footer">Cookies</a><br>
+				<a href="cookies.php" class="a_footer">Cookies</a><br>
 				<a href="https://ec.europa.eu/justice/smedataprotect/index_en.htm" class="a_footer">Política de privacidad</a><br>
-				<a href="error404.html" class="a_footer">Aviso legal</a><br>
-				<a href="error404.html" class="a_footer">Términos y condiciones</a>
+				<a href="error404.php" class="a_footer">Aviso legal</a><br>
+				<a href="error404.php" class="a_footer">Términos y condiciones</a>
 			</div>
 			<div class="wfooter us">
 				<p class="titulillo">Sobre nosotros</p><br>
-				<a href="somos.html" class="a_footer">Quienes somos</a><br>
-				<a href="contacto.html" class="a_footer">Contacto</a><br>
-				<a href="error404.html" class="a_footer">Blog Animal</a><br>
-				<a href="error404.html" class="a_footer">Noticias</a><br>
+				<a href="somos.php" class="a_footer">Quienes somos</a><br>
+				<a href="contacto.php" class="a_footer">Contacto</a><br>
+				<a href="error404.php" class="a_footer">Blog Animal</a><br>
+				<a href="error404.php" class="a_footer">Noticias</a><br>
 
 			</div>
 
 			<div class="wfooter market">
 				<div class="suscriptor">
-					<form class="" action="index.html" method="post">
+					<form class="" action="index.php" method="post">
 						<p class="titulillo">No te pierdas nuestras novedades</p>
 						<br>
 						<input type="text" name="" value="email" class="sus_email">
