@@ -16,7 +16,7 @@ echo <<<abc
                 </div>
                 <div class="mi_cuenta">
                     <ul>
-                        <li><a href="cuenta.php" class="login">Hola Pimpollo</a></li>
+                        <li><a href="cuenta.php" class="login">Sesión</a></li>
                     </ul>
                 </div>
         </nav>

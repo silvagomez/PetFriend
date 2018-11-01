@@ -644,6 +644,14 @@ div.cancall img {
     height: auto;
 }
 
+div.mensaje_enviado{
+    margin-top: 20px;
+    text-align: center;
+    color: #5E548E;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 div.formulario {
     width: 40%;
     display: block;
