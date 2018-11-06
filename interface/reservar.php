@@ -23,8 +23,27 @@
 	?>
 	<div class="wrapper w2">
 		<main>
-            <article class="">
+            <article class="reservar">
+				<div class="marco_reserva">
+					<form class="contenido_reserva" action="index.html" method="post">
+						<div class="column_reserva">
+							<label>Compañero</label>
+							<input type="text" name="" value="Ramona">
+						</div>
+						<div class="column_reserva">
+							<label>Inicio</label>
+							<input type="date" name="" value="">
+						</div>
+						<div class="column_reserva">
+							<label>Fin</label>
+							<input type="date" name="" value="">
+						</div>
+						<div class="">
+							<input type="submit" name="" value="RESERVAR" class="inpunt_basico2">
+						</div>
 
+					</form>
+				</div>
             </article>
 
 		</main>
