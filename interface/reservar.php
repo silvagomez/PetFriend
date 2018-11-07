@@ -25,23 +25,22 @@
 		<main>
             <article class="reservar">
 				<div class="marco_reserva">
-					<form class="contenido_reserva" action="index.html" method="post">
+					<form class="contenido_reserva" action="pago_reserva.php" method="post">
 						<div class="column_reserva">
-							<label>Compañero</label>
+							<label>Compañero *</label>
 							<input type="text" name="" value="Ramona">
 						</div>
 						<div class="column_reserva">
-							<label>Inicio</label>
+							<label>Inicio *</label>
 							<input type="date" name="" value="">
 						</div>
 						<div class="column_reserva">
-							<label>Fin</label>
+							<label>Fin *</label>
 							<input type="date" name="" value="">
 						</div>
-						<div class="">
+						<div class="column_reserva2">
 							<input type="submit" name="" value="RESERVAR" class="inpunt_basico2">
 						</div>
-
 					</form>
 				</div>
             </article>

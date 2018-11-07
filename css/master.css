@@ -124,6 +124,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    margin: 0;
+    /* overflow:hidden; */
 }
 
 /*******************************************************
@@ -217,9 +220,13 @@ a.login {
 ********************************************************/
 main {
     margin-top: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 div.w2 {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1005,24 +1012,25 @@ div.txt_adopt{
 **********************************************************
 ***********************************************************/
 article.reservar{
-    width: 99vw;
+    /* width: 99vw;*/
     height: 95vh;
     background-image:url("../img/fondo_reserva3.jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+
 }
 div.marco_reserva{
     background-color: rgba(255, 255, 255, 0.6);
-    width: 50%;
+    width: 60%;
     padding: 2%;
-    margin: 0 auto;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 5px;
     box-shadow: 1px 1px 10px #404041;
+    margin-bottom: 200px;
 }
 form.contenido_reserva {
     display: flex;
@@ -1034,6 +1042,11 @@ div.column_reserva{
     flex-direction: column;
     width: 20%;
     border-right: 1px solid #757575;
+    margin: 0% 2%;
+}
+div.column_reserva2{
+    width: 20%;
+    margin: 0% 2%;
 }
 div.column_reserva label{
     color: #5E548E;
@@ -1062,6 +1075,100 @@ input.inpunt_basico2:hover{
 background-color: #b8bddb;
 }
 
+/*********************************************************
+**********************************************************
+**********************************************************
+					ACÁ COMIENZA PAGO_RESERVA
+**********************************************************
+**********************************************************
+***********************************************************/
+article.marco_confirmacion{
+    width: 100%;
+    background-image:url("../img/fondo_reserva4.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    flex-direction: column;
+    padding: 5% 0%;
+
+
+}
+div.fila_confirmacion{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin-top: 2%;
+    display: flex;
+    align-self: center;
+    /* border: 2px solid #b8bddb; */
+    box-shadow: 0px 1px 3px #404041;
+    border-radius: 5px;
+    padding: 1% 0%;
+    line-height: 2;
+
+}
+div.fc1{
+    text-align: center;
+}
+div.fc2{
+    box-shadow: inherit;
+    background-color: inherit;
+    color: #fff;
+    text-shadow: 1px 1px #504b51;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+div.column_confimacion{
+    flex: 30%;
+}
+label.label_titulo{
+    color: #5E548E;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+label.term_condition input{
+    width: 12px;
+    height: 12px;
+}
+
+/*********************************************************
+**********************************************************
+**********************************************************
+					ACÁ COMIENZA MENSAJE_PAGO
+**********************************************************
+**********************************************************
+***********************************************************/
+article.mensajedepago{
+    /* width: 99vw;*/
+    height: 95vh;
+    background-image:url("../img/fondo_reserva8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* overflow: hidden; */
+
+}
+div.marco_mensajedepago{
+    background-color: rgba(184, 189, 219, 0.6);
+    width: 25%;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 20px #bbbdc0;
+    /* margin-bottom: 200px; */
+    font-weight: bold;
+    font-size: 2em;
+}
 
 /*********************************************************
 **********************************************************
