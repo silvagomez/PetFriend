@@ -1,4 +1,12 @@
 <?php
+	session_start();
+	require_once "../php/usuario.php";
+	if (isset($_SESSION['user'])) {
+		$user=unserialize($_SESSION['user']);
+	}
+
+?>
+<?php
 
 if (isset($_REQUEST['button'])) {
 	$nombre=$_REQUEST['nombre'];
@@ -68,7 +76,7 @@ if (isset($_REQUEST['button'])) {
 					<div class="mensaje_enviado">
 						<!-- echo -->
 						<br>
-						El mensaje no se ha podido enviar
+						<!-- El mensaje no se ha podido enviar -->
 						<?php
 						if (isset($_REQUEST['button'])) {
 							if(!$mail->send()) {

@@ -177,15 +177,14 @@
 								<a href="error404.php">Términos y Condiciones</a>
 								<a href="error404.php">Política de Privacidad</a>
 							</label>
-
 						</div>
 
 						<input type="submit" name="Iniciar sesión" value="UNETE A PET FRIEND" class="btn">
 					</article>
-
 				</form>
-
 			</section>
+			<br>
+			<p>hola</p>
 
 		</main>
 	</div>

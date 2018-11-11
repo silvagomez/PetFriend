@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	require_once "../php/usuario.php";
+	if (isset($_SESSION['user'])) {
+		$user=unserialize($_SESSION['user']);
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 

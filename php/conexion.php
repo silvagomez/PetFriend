@@ -12,6 +12,7 @@ class Conexion{
 
         if ($conexion->connect_errno) {
             die("FALLO AL CONECTAR");
+            header("Location: ../interface/error404.php");
         }else {
             return $conexion;
         }

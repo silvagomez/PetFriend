@@ -7,11 +7,17 @@
     $usuario = Usuario::login($mail,$password);
 
     if ($usuario->mail != null && $usuario->mail !='') {
-        // sesion_start();
+        session_start();
 
         $_SESSION['user']=serialize($usuario);
+        if ($usuario->mail == 'admi.petfriend@gmail.com') {
 
-        header("Location: ../interface/home.php");
+            header("Location: ../interface/administrador.php");
+
+        }else {
+            header("Location: ../interface/perfil.php");
+        }
+
     }else {
         header("Location: ../interface/error404.php");
     }

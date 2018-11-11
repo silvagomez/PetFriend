@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	require_once "../php/usuario.php";
+	if (isset($_SESSION['user'])) {
+		$user=unserialize($_SESSION['user']);
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +26,7 @@
 
 <body>
 	<?php
-	require_once 'header.php';
+		require_once 'header.php';
 	?>
 	<div class="wrapper w2">
         <main>
@@ -29,93 +37,116 @@
                     </article>
                     <hr class="hr_uno">
                     <br>
+					<form class="" action="../php/perfilControlador.php" method="post">
+						<article class="datos_uno">
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Nombre</label>
+									<input type="text" name="nombre" class="input_datos" value="<?php echo $user->nombre ?>">
+									<span></span>
+								</div>
+								<div class="div_datosp">
+									<label class="label_perfil">Correo electrónico</label>
+									<input type="text" name="mail" class="input_datos" value="<?php echo $user->mail ?>">
+								</div>
+							</div>
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Apellidos</label>
+									<input type="text" name="apellido" class="input_datos" value="<?php echo $user->apellido ?>">
+								</div>
+								<div class="div_datosp">
+									<label class="label_perfil">F. nacimiento</label>
+										<input type="text" value="<?php echo $user->fecha_nacimiento ?>" name="fecha_nacimiento" class="input_datos">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
+								</div>
+							</div>
+						</article>
 
-                    <article class="datos_uno">
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">Nombre</label>
-                                <input type="text" name="nombre" class="input_datos" placeholder="MIKEL CALVO">
-                            </div>
-                            <div class="div_datosp">
-                                <label class="label_perfil">Correo electrónico</label>
-                                <input type="text" name="email" class="input_datos" placeholder="mikelc513@gmail.com">
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">Apellidos</label>
-                                <input type="text" name="apellidos" class="input_datos" placeholder="CALVO PARIENTE">
-                            </div>
-                            <div class="div_datosp">
-                                <label class="label_perfil">F. nacimiento</label>
-                                <input type="text" placeholder="28 de enero de 1999" name="" class="input_datos">
-                                <input type="submit" name="" value="Guardar cambios" class="btn_cambios">
-                            </div>
-                        </div>
+						<br>
+						<hr class="hr_uno">
+						<br>
 
-                    </article>
+						<article class="datos_uno">
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">DNI/Pasaporte</label>
+									<input type="text" name="dni_pass" class="input_datos" value="<?php echo $user->dni_pass ?>" >
+								</div>
 
-                    <br>
-                    <hr class="hr_uno">
-                    <br>
+								<div class="div_datosp">
+									<label class="label_perfil">Dirección</label>
+									<input type="text" name="direccion" class="input_datos" value="<?php echo $user->direccion ?>">
+								</div>
 
-                    <article class="datos_uno">
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">DNI/Pasaporte</label>
-                                <input type="text" name="dni" class="input_datos" placeholder="16104684S" >
-                            </div>
+								<div class="div_datosp">
+									<label class="label_perfil">Telefono</label>
+									<input type="text" name="telefono" class="input_datos" value="<?php echo $user->telefono ?>">
+								</div>
 
-                            <div class="div_datosp">
-                                <label class="label_perfil">Dirección</label>
-                                <input type="text" name="direccion" class="input_datos" placeholder="Sabino Arana nº22 drch 1ºB">
-                            </div>
+							</div>
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Sexo</label>
+									<input type="text" name="sexo" class="input_datos" value="<?php echo $user->sexo ?>">
+								</div>
 
-                        </div>
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">Sexo</label>
-                                <input type="text" checked="checked" class="input_datos" placeholder="Hombre">
-                            </div>
+								<div class="div_datosp">
+									<label class="label_perfil">Provincia</label>
+									<input type="text" value="<?php echo $user->provincia ?>" name="provincia" class="input_datos">
+								</div>
 
-                            <div class="div_datosp">
-                                <label class="label_perfil">Provincia</label>
-                                <input type="text" placeholder="Bizkaia" name="" class="input_datos">
-                            </div>
+								<div class="div_datosp">
+									<label class="label_perfil">Código postal</label>
+									<input type="text" name="cp" class="input_datos" value="<?php echo $user->cp ?>">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
+								</div>
+							</div>
 
-                            <div class="div_datosp">
-                                <label class="label_perfil">Código postal</label>
-                                <input type="text" name="cp" class="input_datos" placeholder="48940">
-                                <input type="submit" name="" value="Guardar cambios" class="btn_cambios">
-                            </div>
-                        </div>
+						</article>
 
-                    </article>
+						<br>
+						<hr class="hr_uno">
+						<br>
 
-                    <br>
-                    <hr class="hr_uno">
-                    <br>
+						<article class="datos_uno">
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Usuario</label>
+									<input type="text" class="input_datos" value="<?php echo $user->nom_user ?>" name="nom_user">
+								</div>
 
-                    <article class="datos_uno">
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">Usuario</label>
-                                <input type="text" class="input_datos" placeholder="mikelcpariente">
-                            </div>
+							</div>
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Contraseña</label>
+									<input type="text" name="password" class="input_datos" value="<?php echo $user->password ?>">
+								</div>
+								<div class="div_datosp">
+									<label class="label_perfil">Confirmar contraseña</label>
+									<input type="text" name="c_password" class="input_datos" value="***********">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
+								</div>
+							</div>
 
-                        </div>
-                        <div class="column">
-                            <div class="div_datosp">
-                                <label class="label_perfil">Contraseña</label>
-                                <input type="text" name="password" class="input_datos" placeholder="***********">
-                            </div>
-                            <div class="div_datosp">
-                                <label class="label_perfil">Confirmar contraseña</label>
-                                <input type="text" name="password" class="input_datos" placeholder="***********">
-                                <input type="submit" name="" value="Guardar cambios" class="btn_cambios">
-                            </div>
-                        </div>
-                    </article>
+						</article>
+						<br>
+						<hr class="hr_uno">
+						<br>
+						<!-- <article class="datos_uno">
+							<div class="column">
+								<div class="div_datosp">
+									<label class="label_perfil">Eliminar cuenta</label>
+									<input type="submit" name="delete" value="Eliminar cuenta" class="btn_cambios">
+								</div>
+								<div class="div_datosp">
+
+								</div>
+							</div>
+
+						</article> -->
+
+					</form>
                 </section>
 
 
@@ -125,13 +156,13 @@
                     </div>
 
                     <div class="p_nombre">
-                        <h3 class="nombre">Mikel Calvo</h3>
+                        <h3 class="nombre"><?php echo $user->nombre." ".$user->apellido ?></h3>
 
                     </div>
 
                     <div class="p_location">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <h3>Leioa, Bizkaia</h3>
+                        <h3><?php echo $user->direccion ?></h3>
 
                     </div>
 
@@ -149,10 +180,14 @@
                     <br>
 
                     <div class="redes_sociales">
-    					<a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    					<!-- <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
     					<a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     					<a href="https://www.twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-    					<a href="https://www.snapchat.com/"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+    					<a href="https://www.snapchat.com/"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a> -->
+						<form class="" action="../php/cerrar_sesion.php" method="post">
+							<br>
+							<input type="submit" name="" value="Cerrar Sesión" class="cerrar">
+						</form>
 
     				</div>
 
