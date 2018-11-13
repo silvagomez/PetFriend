@@ -12,7 +12,7 @@ if (isset($_SESSION['user'])) {
                             <li><a href="contacto.php">Contácto</a></li>
                             <li><a href="donar.php">Donar</a></li>
                             <li><a href="animales.php">Animales</a></li>
-                            <!-- <li><a href="somos.php">Quienes somos</a></li> -->
+                            <li><a href="somos.php">Quiénes somos</a></li>
                         </ul>
                     </div>
                     <div class="mi_cuenta">
@@ -37,7 +37,7 @@ abc;
                             <li><a href="contacto.php">Contácto</a></li>
                             <li><a href="donar.php">Donar</a></li>
                             <li><a href="animales.php">Animales</a></li>
-                            <!-- <li><a href="somos.php">Quienes somos</a></li> -->
+                            <li><a href="somos.php">Quiénes somos</a></li>
                         </ul>
                     </div>
                     <div class="mi_cuenta">
