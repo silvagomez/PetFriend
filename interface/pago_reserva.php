@@ -65,15 +65,15 @@
                 <div class="fila_confirmacion">
                     <form class="form1" action="mensaje_pago.php" method="post">
                         <label for="cantidad" class="label_titulo">Cantidad:</label>
-                        <input name="cantidad" placeholder="39.93€">
+                        <input type="number" name="cantidad" placeholder="39.93€">
                         <label for="nombre" class="label_titulo">Nombre en la tarjeta: *</label>
-                        <input name="nombre" placeholder="Nombre">
+                        <input type="text" name="nombre" placeholder="Nombre">
                         <label for="ntarjeta" class="label_titulo">Número de la tarjeta: *</label>
-                        <input name="ntarjeta" type="ntarjeta" placeholder="0000-0000-0000-0000">
-                        <label for="cseguridad" class="label_titulo">Código de seguridad: *</label>
-                        <input name="cseguridad" placeholder="000">
+                        <input name="ntarjeta" type="number" min="16" max="16" placeholder="0000-0000-0000-0000">
                         <label for="expira" class="label_titulo">Expiración: *</label>
-                        <input name="expira" type="expira" placeholder="mes-año">
+                        <input name="expira" type="month" placeholder="mes-año">
+						<label for="cseguridad" class="label_titulo">Código de seguridad: *</label>
+						<input type="number" min="3" max="3" name="cseguridad" placeholder="000">
                         <label for="TermsAndConditions" class="term_condition">
                             <input name="TermsAndConditions" type="checkbox" value="true" required>
                             <a href="error404.php">Términos y Condiciones</a>

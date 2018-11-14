@@ -35,15 +35,15 @@
                 <div class="">
                     <form class="form1">
                         <label for="cantidad">Cantidad:</label>
-                        <input name="cantidad" placeholder="€500">
+                        <input type="number" name="cantidad" placeholder="€500">
                         <label for="nombre">Nombre en la tarjeta:</label>
-                        <input name="nombre" placeholder="Nombre">
+                        <input type="text" name="nombre" placeholder="Nombre">
                         <label for="ntarjeta">Número de la tarjeta:</label>
-                        <input name="ntarjeta" type="ntarjeta" placeholder="0000-0000-0000-0000">
-                        <label for="cseguridad">Código de seguridad</label>
-                        <input name="cseguridad" placeholder="000">
+                        <input type="number" name="ntarjeta" placeholder="0000-0000-0000-0000" min="16" max="16">
                         <label for="expira">Expiración:</label>
-                        <input name="expira" type="expira" placeholder="mes-año">
+                        <input type="month" name="expira" placeholder="mes-año">
+						<label for="cseguridad">Código de seguridad CCV</label>
+						<input type="number" min="3" max="3" name="cseguridad" placeholder="000">
                         <br>
                         <br>
                         <button type="button" name="button" class="btn_basic">Donar</button>

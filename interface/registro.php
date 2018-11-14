@@ -48,7 +48,7 @@
 						<div class="div_datos">
 							<label>Correo electrónico</label>
 							<br>
-							<input type="text" name="mail" class="inpunt_basico" placeholder="Correo electrónico" required>
+							<input type="email" name="mail" class="inpunt_basico" placeholder="Correo electrónico" required>
 						</div>
 
 						<div class="div_datos">
@@ -78,7 +78,7 @@
 						<div class="div_datos">
 							<label>Teléfono</label>
 							<br>
-							<input type="text" name="telefono" class="inpunt_basico" placeholder="Teléfono" required>
+							<input type="tel" name="telefono" class="inpunt_basico" placeholder="Teléfono" required min="9" max="11">
 						</div>
 
 						<div class="div_datos">
@@ -149,7 +149,7 @@
 						<div class="div_datos">
 							<label>Código postal</label>
 							<br>
-							<input type="text" name="cp" class="inpunt_basico" placeholder="CP" required>
+							<input type="number" name="cp" class="inpunt_basico" placeholder="CP" required min="5" max="5">
 						</div>
 
 						<div class="div_datos">
@@ -161,13 +161,13 @@
 						<div class="div_datos">
 							<label>Contraseña</label>
 							<br>
-							<input type="text" name="password" class="inpunt_basico" placeholder="Contraseña" required>
+							<input type="password" name="password" class="inpunt_basico" placeholder="Contraseña" required>
 						</div>
 
 						<div class="div_datos">
 							<label>Confirmar contraseña</label>
 							<br>
-							<input type="text" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" required>
+							<input type="password" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" required>
 						</div>
 
 						<div class="terminos">

@@ -47,7 +47,7 @@
 								</div>
 								<div class="div_datosp">
 									<label class="label_perfil">Correo electrónico</label>
-									<input type="text" name="mail" class="input_datos" value="<?php echo $user->mail ?>">
+									<input type="email" name="mail" class="input_datos" value="<?php echo $user->mail ?>">
 								</div>
 							</div>
 							<div class="column">
@@ -57,7 +57,7 @@
 								</div>
 								<div class="div_datosp">
 									<label class="label_perfil">F. nacimiento</label>
-										<input type="text" value="<?php echo $user->fecha_nacimiento ?>" name="fecha_nacimiento" class="input_datos">
+										<input type="date" value="<?php echo $user->fecha_nacimiento ?>" name="fecha_nacimiento" class="input_datos">
 									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
 								</div>
 							</div>
@@ -81,7 +81,7 @@
 
 								<div class="div_datosp">
 									<label class="label_perfil">Telefono</label>
-									<input type="text" name="telefono" class="input_datos" value="<?php echo $user->telefono ?>">
+									<input type="tel" name="telefono" class="input_datos" value="<?php echo $user->telefono ?>" min="9" max="11">
 								</div>
 
 							</div>
@@ -98,7 +98,7 @@
 
 								<div class="div_datosp">
 									<label class="label_perfil">Código postal</label>
-									<input type="text" name="cp" class="input_datos" value="<?php echo $user->cp ?>">
+									<input type="number" name="cp" class="input_datos" value="<?php echo $user->cp ?>" min="5" max="5">
 									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
 								</div>
 							</div>
@@ -120,11 +120,11 @@
 							<div class="column">
 								<div class="div_datosp">
 									<label class="label_perfil">Contraseña</label>
-									<input type="text" name="password" class="input_datos" value="<?php echo $user->password ?>">
+									<input type="password" name="password" class="input_datos" value="<?php echo $user->password ?>">
 								</div>
 								<div class="div_datosp">
 									<label class="label_perfil">Confirmar contraseña</label>
-									<input type="text" name="c_password" class="input_datos" value="***********">
+									<input type="password" name="c_password" class="input_datos">
 									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios">
 								</div>
 							</div>
