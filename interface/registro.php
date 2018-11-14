@@ -78,7 +78,7 @@
 						<div class="div_datos">
 							<label>Teléfono</label>
 							<br>
-							<input type="tel" name="telefono" class="inpunt_basico" placeholder="Teléfono" required min="9" max="11">
+							<input type="tel" name="telefono" class="inpunt_basico" placeholder="123-123-1234" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
 						</div>
 
 						<div class="div_datos">
@@ -149,7 +149,7 @@
 						<div class="div_datos">
 							<label>Código postal</label>
 							<br>
-							<input type="number" name="cp" class="inpunt_basico" placeholder="CP" required min="5" max="5">
+							<input type="number" name="cp" class="inpunt_basico" placeholder="00000" required pattern="[0-9]{5}">
 						</div>
 
 						<div class="div_datos">

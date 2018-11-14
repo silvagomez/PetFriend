@@ -81,7 +81,7 @@
 
 								<div class="div_datosp">
 									<label class="label_perfil">Telefono</label>
-									<input type="tel" name="telefono" class="input_datos" value="<?php echo $user->telefono ?>" min="9" max="11">
+									<input type="tel" name="telefono" class="input_datos" value="<?php echo $user->telefono ?>" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 								</div>
 
 							</div>

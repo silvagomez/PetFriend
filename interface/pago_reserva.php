@@ -73,7 +73,7 @@
                         <label for="expira" class="label_titulo">Expiración: *</label>
                         <input name="expira" type="month" placeholder="mes-año">
 						<label for="cseguridad" class="label_titulo">Código de seguridad: *</label>
-						<input type="number" min="3" max="3" name="cseguridad" placeholder="000">
+						<input type="number" pattern="[0-9]{3}" name="cseguridad" placeholder="000">
                         <label for="TermsAndConditions" class="term_condition">
                             <input name="TermsAndConditions" type="checkbox" value="true" required>
                             <a href="error404.php">Términos y Condiciones</a>

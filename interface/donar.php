@@ -43,10 +43,10 @@
                         <label for="expira">Expiración:</label>
                         <input type="month" name="expira" placeholder="mes-año">
 						<label for="cseguridad">Código de seguridad CCV</label>
-						<input type="number" min="3" max="3" name="cseguridad" placeholder="000">
+						<input type="number" min="3" max="3" name="cseguridad" placeholder="000" pattern="[0-9]{3}" required>
                         <br>
                         <br>
-                        <button type="button" name="button" class="btn_basic">Donar</button>
+                        <button type="submit" name="button" class="btn_basic">Donar</button>
                     </form>
                 </div>
                 <div class="">
