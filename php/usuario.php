@@ -75,16 +75,22 @@ sql;
 
         public static function modificarUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password){
 
-            // RECIBE UN USER?
+            try {
+                //Metemos en la variable conexión la llamada a la class Conexion de conexion.php y usamos el método getConexion()
+                $conexion=Conexion::getConexion();
 
-            //Metemos en la variable conexión la llamada a la class Conexion de conexion.php y usamos el método getConexion()
-            $conexion=Conexion::getConexion();
-
-            //Ahora vamos hacer un update a la bd de los nuevos datos
-            $q=<<<sql
-            UPDATE cliente SET nombre=$nombre, apellido=$apellido, fecha_nacimiento=$fecha_nacimiento, dni_pass=$dni_pass, sexo=$sexo, telefono=$telefono, direccion=$direccion, provincia=$provincia, cp=$cp, nom_user=$nom_user WHERE mail=$mail
+                //Ahora vamos hacer un update a la bd de los nuevos datos
+                $q=<<<sql
+                UPDATE cliente SET nombre=$nombre, apellido=$apellido, fecha_nacimiento=$fecha_nacimiento, dni_pass=$dni_pass, sexo=$sexo, telefono=$telefono, direccion=$direccion, provincia=$provincia, cp=$cp, nom_user=$nom_user WHERE mail=$mail
 sql;
-            $conexion->query($q);
+                //Prepara la sentencia
+                $stmt=$conexion->prepare($q);
+                //Ejecuta la sentencia
+                $stmt->execute();
+
+            } catch (PDOException $e) {
+
+            }
 
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);
