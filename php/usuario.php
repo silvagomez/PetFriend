@@ -75,7 +75,7 @@ sql;
 
         public static function modificarUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password){
 
-            try {
+            
                 //Metemos en la variable conexión la llamada a la class Conexion de conexion.php y usamos el método getConexion()
                 $conexion=Conexion::getConexion();
 
@@ -88,9 +88,7 @@ sql;
                 //Ejecuta la sentencia
                 $stmt->execute();
 
-            } catch (PDOException $e) {
 
-            }
 
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);
