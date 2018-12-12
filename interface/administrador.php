@@ -60,7 +60,8 @@
                             </div>
                         </div>
 							<?php
-                            require_once "../php/list_usuarios.php";
+							require_once "../php/list_usuarios.php";
+							require_once "../php/list_animales.php";
                             ?>
 					</article>
 
