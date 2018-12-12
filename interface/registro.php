@@ -78,7 +78,7 @@
 						<div class="div_datos">
 							<label>Teléfono</label>
 							<br>
-							<input type="tel" name="telefono" class="inpunt_basico" placeholder="123-123-1234" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+							<input type="tel" name="telefono" class="inpunt_basico" placeholder="1231231234" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
 						</div>
 
 						<div class="div_datos">
