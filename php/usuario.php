@@ -66,7 +66,7 @@ sql;
             $q=<<<sql
             INSERT INTO cliente(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password')
 sql;
-            $conexion->query($q);
+            $conexion->query($q) or die("ERRORRRR");
 
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);
