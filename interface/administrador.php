@@ -38,6 +38,9 @@
 					</article>
 					<hr class="hr_uno">
 					<br>
+					<div class="btani">
+							<a href="agregarAnimal.php">Agregar un animal</a>
+						</div>
 					<article class="lista_usuarios">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
@@ -61,10 +64,10 @@
                         </div>
 							<?php
 							require_once "../php/list_usuarios.php";
-							require_once "../php/list_animales.php";
+							//require_once "../php/list_animales.php";
                             ?>
 					</article>
-
+					
 				</section>
 
             </div>
