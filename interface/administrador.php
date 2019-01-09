@@ -38,9 +38,20 @@
 					</article>
 					<hr class="hr_uno">
 					<br>
+					<article class="3opc">
+						<div class="opc">
+							<img src="" alt="">
+						</div>
+						<div class="opc">
+							<img src="" alt="">
+						</div>
+						<div class="opc">
+							<img src="" alt="">
+						</div>
+					</article>
 					<div class="btani">
 							<a href="agregarAnimal.php">Agregar un animal</a>
-						</div>
+					</div>
 					<article class="lista_usuarios">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
