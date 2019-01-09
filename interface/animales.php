@@ -24,6 +24,7 @@
 	<!--<link href="https://fonts.googleapis.com/css?family= Quicksand " rel="stylesheet">-->
 
 	<!--Zona para los scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -41,10 +42,12 @@
 					<option value="">Pez</option>
 					<option value="">Reptil</option>
 				</select>
-				<input class="search" type="text" placeholder=" Cuatro patas.." id="busqueda" name="search">
-				<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
+				<form action="../php/buscador.php" method="post" autocomplete="off">
+					<input class="search" type="text" placeholder=" Cuatro patas..." id="busqueda" name="buscar" onkeyup="buscar_ajax(this.value);">
+					<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
+					</form>
 				<section class="result">
-
+					
 				</section>
 			</article>
 			<article class="animals">
