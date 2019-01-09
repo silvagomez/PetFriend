@@ -13,10 +13,11 @@
     $cp = $_REQUEST['cp'];
     $nom_user = $_REQUEST['nom_user'];
     $password = $_REQUEST['password'];
+    $img = $_REQUEST['img'];
 
     require_once("usuario.php");
 
-    Usuario::createUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password);
+    Usuario::createUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password,$img);
 
     //Para cuando te creas una cuenta te vas a la página inicial
     header("Location: ../interface/home.php");

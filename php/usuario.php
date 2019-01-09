@@ -30,7 +30,7 @@
             //Hacemos la select e ingresamos los datos en q
 
             $q=<<<sql
-            SELECT * from cliente where mail='$mail' and password='$password'
+            SELECT * from usuario where mail='$mail' and password='$password'
 sql;
             $resultado=$conexion->query($q);
 
@@ -66,7 +66,7 @@ sql;
 
             //Ahora vamos hacer un insert a la bd
             $q=<<<sql
-            INSERT INTO cliente(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password')
+            INSERT INTO usuario(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password')
 sql;
             $conexion->query($q) or die("ERRORRRR");
 
@@ -83,7 +83,7 @@ sql;
 
                 //Ahora vamos hacer un update a la bd de los nuevos datos
                 $q=<<<sql
-                UPDATE cliente SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$fecha_nacimiento', dni_pass='$dni_pass', sexo='$sexo', telefono='$telefono', direccion='$direccion', provincia='$provincia', cp='$cp', nom_user='$nom_user' WHERE mail='$mail'
+                UPDATE usuario SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$fecha_nacimiento', dni_pass='$dni_pass', sexo='$sexo', telefono='$telefono', direccion='$direccion', provincia='$provincia', cp='$cp', nom_user='$nom_user' WHERE mail='$mail'
 sql;
                 //Realiza la sentencia
                 $resultado=$conexion->query($q) or die ("ERROR");
@@ -101,7 +101,7 @@ sql;
             $conexion=Conexion::getConexion();
 
             $q=<<<sql
-            DELETE * from cliente where mail='$mail'
+            DELETE * from usuario where mail='$mail'
 sql;
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);
@@ -118,7 +118,7 @@ sql;
             //Hacemos la select e ingresamos los datos en q
 
             $q=<<<sql
-            SELECT * from cliente
+            SELECT * from usuario
 sql;
             $resultado=$conexion->query($q);
 

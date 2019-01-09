@@ -153,7 +153,7 @@
 
                 <section class="pantalla_central2 section_drch">
                     <div class="i_perfil">
-                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <img src= <?php echo $user->img?> alt="" width="200px"><!--<i class="fa fa-user" aria-hidden="true"></i>-->
                     </div>
 
                     <div class="p_nombre">

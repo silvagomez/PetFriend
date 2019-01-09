@@ -167,7 +167,13 @@
 						<div class="div_datos">
 							<label>Confirmar contraseña</label>
 							<br>
-							<input type="password" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" required>
+							<input type="fipasswordle" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" accept="image/png, image/jpeg">
+						</div>
+
+						<div class="div_datos">
+							<label>Añade una imagen de perfil</label>
+							<br>
+							<input type="file" name="img_perfil" class="inpunt_basico" accept="image/png, image/jpeg">
 						</div>
 
 						<div class="terminos">
