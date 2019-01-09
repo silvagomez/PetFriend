@@ -59,7 +59,7 @@
 								<div class="div_datosp">
 									<label class="label_perfil">F. nacimiento</label>
 										<input type="date" value="<?php echo $user->fecha_nacimiento ?>" name="fecha_nacimiento" class="input_datos">
-									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc" onclick="mensaje_update()">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc1" onclick="mensaje_update()">
 								</div>
 							</div>
 						</article>
@@ -100,7 +100,7 @@
 								<div class="div_datosp">
 									<label class="label_perfil">Código postal</label>
 									<input type="number" name="cp" class="input_datos" value="<?php echo $user->cp ?>">
-									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc" onclick="mensaje_update()">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc2" onclick="mensaje_update()">
 								</div>
 							</div>
 
@@ -126,7 +126,7 @@
 								<div class="div_datosp">
 									<label class="label_perfil">Confirmar contraseña</label>
 									<input type="password" name="c_password" class="input_datos">
-									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc" onclick="mensaje_update()">
+									<input type="submit" name="change" value="Guardar cambios" class="btn_cambios" id="change_gc3" onclick="mensaje_update()">
 								</div>
 							</div>
 
