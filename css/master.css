@@ -1339,13 +1339,20 @@ section.pantalla_central3{
     border: 1px solid #b8bddb;
     box-shadow: 0px 1px 3px #404041;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
 }
 article.three_opc{
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     justify-items: center;
+    margin-top: 20px;
+
 }
 figure.iconos_admi{
     text-align: center;
@@ -1355,9 +1362,10 @@ a.vista{
     width: 80%;
 }
 .vista>img{
-    max-width: 60%;
+    max-width: 40%;
     background-color: #5E548E;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px #bbbdc0;
 }
 .vista>img:hover{
     background-color: #b8bddb;
@@ -1367,11 +1375,20 @@ h2.titulo_icon{
     font-weight: bold;
     margin-bottom: 10px;
 }
-article.lista_1{
+article.lista_0{
+    margin-top: 50px;
     display: none;
+    width: 100%;
+}
+article.lista_1{
+    margin-top: 50px;
+    display: none;
+    width: 100%;
 }
 article.lista_2{
+    margin-top: 50px;
     display: none;
+    width: 100%;
 }
 div.list_usuarios{
     width: 100%;

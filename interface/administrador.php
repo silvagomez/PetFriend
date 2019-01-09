@@ -44,8 +44,8 @@
 								<figcaption>
 									<h2 class="titulo_icon">- Usuarios -</h2>
 								</figcaption>
-								<a href="#" class="vista _user" onclick=display_list()>
-									<img src="../img/iconos_admi_usuarios.png" alt="">
+								<a href="#" class="vista _user" onclick=display_list(0)>
+									<img src="../img/iconos_admi_usuarios.png" class="icon_sw">
 								</a>
 							</figure>
 
@@ -53,8 +53,8 @@
 								<figcaption>
 									<h2 class="titulo_icon">- Animales -</h2>
 								</figcaption>
-								<a href="#" class="vista _animal" onclick=display_list()>
-									<img src="../img/iconos_admi_animales.png" alt="">
+								<a href="#" class="vista _animal" onclick=display_list(1)>
+									<img src="../img/iconos_admi_animales.png" class="icon_sw">
 								</a>
 							</figure>
 
@@ -62,13 +62,13 @@
 								<figcaption>
 									<h2 class="titulo_icon">- Reservas -</h2>
 								</figcaption>
-								<a href="#" class="vista _reserva" onclick=display_list()>
-									<img src="../img/iconos_admi_reservas.png" alt="">
+								<a href="#" class="vista _reserva" onclick=display_list(2)>
+									<img src="../img/iconos_admi_reservas.png" class="icon_sw">
 								</a>
 							</figure>
 
 					</article>
-					<article class="lista_1">
+					<article class="lista_0">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Nombre</p>
@@ -94,7 +94,7 @@
 							//require_once "../php/list_animales.php";
                             ?>
 					</article>
-					<article class="lista_2">
+					<article class="lista_1">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Nombre</p>
@@ -119,9 +119,34 @@
 							require_once "../php/list_animales_total.php";
 							?>
 							<div class="btani">
-								<a href="agregarAnimal.php">Agregar un animal</a>
+								<a href="agregarAnimal.php">
+									<button class="btn_basic" >
+										Agregar un animal
+									</button>
+								</a>
 							</div>
 					</article>
+					<article class="lista_2">
+						<div class="list_usuarios">
+                            <div class="bd_row brtitulo">
+                                <p>Usuario</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Animal</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Recogida</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Entrega</p>
+                            </div>
+                            <div class="bd_row brtitulo bda">
+                                <p>Id_pago</p>
+                            </div>
+                            <div class="bd_row brtitulo bda">
+                                <p>Id_alquiler</p>
+                            </div>
+                        </div>
 					
 				</section>
 

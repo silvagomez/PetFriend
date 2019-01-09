@@ -15,7 +15,7 @@ sql;
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo <<<abc
             <div class="list_usuarios">
-            <div class="bd_row">{$row['nombre']}</div>  <div class="bd_row">{$row['raza']}</div>  <div class="bd_row">{$row['edad']}</div> <div class="bd_row">{$row['sexo']}</div> <div class="bd_row bda"><a href="#">editar</a></div> <div class="bd_row bda"><a href="#">eliminar</a><br></div>
+            <div class="bd_row">{$row['nombre']}</div>  <div class="bd_row">{$row['raza']}</div>  <div class="bd_row">{$row['sexo']}</div> <div class="bd_row">{$row['edad']}</div> <div class="bd_row bda"><a href="#">editar</a></div> <div class="bd_row bda"><a href="#">eliminar</a><br></div>
             </div>
 abc;
         }

@@ -4,7 +4,7 @@
     $conexion=Conexion::getConexion();
 
     $q=<<<sql
-    SELECT nombre, apellido, mail, telefono FROM cliente where id_usuario <> '1'
+    SELECT nombre, apellido, mail, telefono FROM usuario where id_usuario <> '1'
 sql;
     $resultado=$conexion->query($q);
 
