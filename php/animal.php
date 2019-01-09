@@ -29,9 +29,34 @@ sql;
         }
 
 
+        public static function mostrarAnimales(){
+
+            $animales = array();
+
+            $conexion = Conexion::getConexion();
+
+            $q = "SELECT * from animal";
+
+            $resultado = $conexion->query($q)or die("MIERDA!!!");
 
 
+            while ($rows = $resultado->fetch_assoc()) {
+            $animal = new Animal();
+				$animal->nombre = $rows['nombre'];
+				$animal->especie = $rows['especie'];
+				$animal->raza = $rows['raza'];
+				$animal->edad = $rows['edad'];
+                $animal->sexo = $rows['sexo'];
 
+                $animales[] = $animal;
+        }
+
+            
+			Conexion::cerrarConexion($conexion);
+
+			return $animales;
+
+    }
     }
 
 
