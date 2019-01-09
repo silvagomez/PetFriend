@@ -23,6 +23,7 @@
 	<!--<link href="https://fonts.googleapis.com/css?family= Quicksand " rel="stylesheet">-->
 
 	<!--Zona para los scripts-->
+	<script src="../js/funciones.js" defer></script> 
 </head>
 
 <body>
@@ -38,21 +39,36 @@
 					</article>
 					<hr class="hr_uno">
 					<br>
-					<article class="3opc">
-						<div class="opc">
-							<img src="" alt="">
-						</div>
-						<div class="opc">
-							<img src="" alt="">
-						</div>
-						<div class="opc">
-							<img src="" alt="">
-						</div>
+					<article class="three_opc">
+							<figure class="iconos_admi">
+								<figcaption>
+									<h2 class="titulo_icon">- Usuarios -</h2>
+								</figcaption>
+								<a href="#" class="vista _user" onclick=display_list()>
+									<img src="../img/iconos_admi_usuarios.png" alt="">
+								</a>
+							</figure>
+
+							<figure class="iconos_admi">
+								<figcaption>
+									<h2 class="titulo_icon">- Animales -</h2>
+								</figcaption>
+								<a href="#" class="vista _animal" onclick=display_list()>
+									<img src="../img/iconos_admi_animales.png" alt="">
+								</a>
+							</figure>
+
+							<figure class="iconos_admi">
+								<figcaption>
+									<h2 class="titulo_icon">- Reservas -</h2>
+								</figcaption>
+								<a href="#" class="vista _reserva" onclick=display_list()>
+									<img src="../img/iconos_admi_reservas.png" alt="">
+								</a>
+							</figure>
+
 					</article>
-					<div class="btani">
-							<a href="agregarAnimal.php">Agregar un animal</a>
-					</div>
-					<article class="lista_usuarios">
+					<article class="lista_1">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Nombre</p>
@@ -77,6 +93,34 @@
 							require_once "../php/list_usuarios.php";
 							//require_once "../php/list_animales.php";
                             ?>
+					</article>
+					<article class="lista_2">
+						<div class="list_usuarios">
+                            <div class="bd_row brtitulo">
+                                <p>Nombre</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Raza</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Sexo</p>
+                            </div>
+                            <div class="bd_row brtitulo">
+                                <p>Likes</p>
+                            </div>
+                            <div class="bd_row brtitulo bda">
+                                <p>Editar</p>
+                            </div>
+                            <div class="bd_row brtitulo bda">
+                                <p>Eliminar</p>
+                            </div>
+                        </div>
+							<?php
+							require_once "../php/list_animales_total.php";
+							?>
+							<div class="btani">
+								<a href="agregarAnimal.php">Agregar un animal</a>
+							</div>
 					</article>
 					
 				</section>

@@ -1340,6 +1340,39 @@ section.pantalla_central3{
     box-shadow: 0px 1px 3px #404041;
     padding: 15px;
 }
+article.three_opc{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+figure.iconos_admi{
+    text-align: center;
+    /* border: 1px solid #BD94C4; */
+}
+a.vista{
+    width: 80%;
+}
+.vista>img{
+    max-width: 60%;
+    background-color: #5E548E;
+    border-radius: 10px;
+}
+.vista>img:hover{
+    background-color: #b8bddb;
+}
+h2.titulo_icon{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+article.lista_1{
+    display: none;
+}
+article.lista_2{
+    display: none;
+}
 div.list_usuarios{
     width: 100%;
     display: flex;
@@ -1349,11 +1382,10 @@ div.list_usuarios{
     background-color: #fff;
 }
 div.bd_row{
-    width: 5%;
+    width: 6%;
     line-height: 2;
 
 }
-
 div.brtitulo{
     text-align: center;
     font-size: 1.2em;
