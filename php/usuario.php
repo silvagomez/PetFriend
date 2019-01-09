@@ -16,6 +16,7 @@
         public $cp;
         public $nom_user;
         public $password;
+        public $img;
 
         //Hacemos la función login y le ingresamos los parámetros que vamos a usar
         public static function login($mail,$password){
@@ -49,6 +50,7 @@ sql;
             $user-> cp = $rows['cp'];
             $user-> nom_user = $rows['nom_user'];
             $user-> password = $rows['password'];
+            $user-> img = $rows['img'];
 
             Conexion::cerrarConexion($conexion);
 

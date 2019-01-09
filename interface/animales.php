@@ -41,112 +41,25 @@
 					<option value="">Pez</option>
 					<option value="">Reptil</option>
 				</select>
-				<input class="search" type="text" placeholder=" Cuatro patas.." name="search">
-				<button type="submit" class="lookup"><i class="fa fa-search"></i></button>
+				<input class="search" type="text" placeholder=" Cuatro patas.." id="busqueda" name="search">
+				<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
+				<section class="result">
+
+				</section>
 			</article>
 			<article class="animals">
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_bird1.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Margarita</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_cat1.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Nyah</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_can1.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Tomate</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_fish2.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Tiburoncin</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_rept1.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Rene</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#" id="img_modal">
-							<img src="../img/a_bird5.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani" id="btn_modal">Ramona</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_cat5.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Jack</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="animalito">
-					<figure>
-						<a href="#">
-							<img src="../img/a_can2.png" class="a_pet">
-						</a>
-						<figcaption>
-							<button type="button" name="button" class="nombre_ani">Blue</button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
-							<button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
-						</figcaption>
-					</figure>
-				</div>
+				<?php
+				
+				require_once '../php/list_animales.php';
+
+				?>
 			</article>
+		
 			<article class="load">
 				<img src="../img/cargando.gif" alt="">
 			</article>
 
-			<div id="lamascara" class="mascara">
+			<!--<div id="lamascara" class="mascara">
             <div class="contenido">
             	<span class="cerrar">&times;</span>
             	<div class="animal_div">
@@ -170,7 +83,7 @@
 		                 </div>
                     </div>
                 </div>
-
+-->
             </div>
         </div>
 		<script type="text/javascript" src="../js/modal.js"></script>
