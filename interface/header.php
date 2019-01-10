@@ -17,7 +17,7 @@ if (isset($_SESSION['user'])) {
                     </div>
                     <div class="mi_cuenta">
                         <ul>
-                            <li><a href="perfil.php" class="login">$user->nombre</a></li>
+                            <li><a href="perfil.php" class="login">Hola...$user->nom_user</a></li>
                         </ul>
                     </div>
             </nav>

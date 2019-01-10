@@ -506,6 +506,27 @@ button.lookup .fa{
     margin: 0;
 }
 
+ul#mostrar{
+    background-color: #5e548e;
+    position: absolute;
+    width: 43.6%;
+    margin: 0px 0px 0px 283px;
+    z-index: 9;
+}
+li.busc{
+    color: white;
+    float: none;
+    border-bottom: 1px solid;
+    line-height: 1;
+    font-weight: 800;
+}
+a.b{
+    padding: 3% 0% 3% 0%;
+  
+}
+a.b:hover{
+    background-color: #9B88B7;
+}
 /*********************************************************
 						IMAGENES DE LOS ANIMALES
 **********************************************************/

@@ -25,6 +25,7 @@
 
 	<!--Zona para los scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../js/buscador.js" defer></script>
 </head>
 
 <body>
@@ -42,12 +43,14 @@
 					<option value="">Pez</option>
 					<option value="">Reptil</option>
 				</select>
-				<form action="../php/buscador.php" method="post" autocomplete="off">
+				<form autocomplete="off">
 					<input class="search" type="text" placeholder=" Cuatro patas..." id="busqueda" name="buscar" onkeyup="buscar_ajax(this.value);">
 					<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
-					</form>
-				<section id="result">
-					
+				</form>
+				<section>
+					<ul id="mostrar">
+						
+					</ul>
 				</section>
 			</article>
 			<article class="animals">

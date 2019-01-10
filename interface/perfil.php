@@ -153,7 +153,13 @@
 
                 <section class="pantalla_central2 section_drch">
                     <div class="i_perfil">
-                        <img src= <?php echo $user->img?> alt="" width="200px"><!--<i class="fa fa-user" aria-hidden="true"></i>-->
+						<?php
+						if($user->img == null){
+							echo '<i class="fa fa-user" aria-hidden="true"></i>';
+						}else{
+							echo '<img src= '. $user->img .' alt="" width="200px">';
+						}
+						?>
                     </div>
 
                     <div class="p_nombre">
