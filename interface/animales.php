@@ -46,7 +46,7 @@
 					<input class="search" type="text" placeholder=" Cuatro patas..." id="busqueda" name="buscar" onkeyup="buscar_ajax(this.value);">
 					<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
 					</form>
-				<section class="result">
+				<section id="result">
 					
 				</section>
 			</article>
