@@ -6,6 +6,7 @@ function display_list(num) {
     var animales = document.getElementsByClassName("lista_1");
     var reserva = document.getElementsByClassName("lista_2");
     var icon = document.getElementsByClassName("icon_sw");
+
     switch (num) {
         case 0:
             usuario[0].style.display="block";
@@ -35,5 +36,15 @@ function display_list(num) {
             icon[1].style.backgroundColor="#5E548E";
             break;
     }
-    console.log(icon);
+}
+function eliminar_user(id_usuario) {
+    if (confirm('Confirma eliminar usuario')) {
+        <?php
+        ?>;
+        alert(id_usuario);
+    } else {
+        
+    }
+    
+
 }

@@ -4,7 +4,7 @@
     $conexion=Conexion::getConexion();
 
     $q=<<<sql
-    SELECT nombre, apellido, mail, telefono FROM usuario where id_usuario <> '1'
+    SELECT id_usuario, nombre, apellido, mail, telefono FROM usuario where id_usuario <> '1'
 sql;
     $resultado=$conexion->query($q);
 
@@ -15,7 +15,12 @@ sql;
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo <<<abc
             <div class="list_usuarios">
-            <div class="bd_row">{$row['nombre']}</div>  <div class="bd_row">{$row['apellido']}</div>  <div class="bd_row">{$row['mail']}</div> <div class="bd_row">{$row['telefono']}</div> <div class="bd_row bda"><a href="#">editar</a></div> <div class="bd_row bda"><a href="#">eliminar</a><br></div>
+                <div class="bd_row">{$row['nombre']}</div>
+                <div class="bd_row">{$row['apellido']}</div>
+                <div class="bd_row">{$row['mail']}</div>
+                <div class="bd_row">{$row['telefono']}</div>
+                <div class="bd_row bda"><a href="#">editar</a></div>
+                <div class="bd_row bda"><a href="#" onclick="eliminar_user({$row['id_usuario']})">eliminar</a><br></div>
             </div>
 abc;
         }
