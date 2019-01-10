@@ -68,7 +68,7 @@
 							</figure>
 
 					</article>
-					<article class="lista_0">
+					<article class="lista_0" style="display:none;">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Nombre</p>
@@ -94,7 +94,7 @@
 							//require_once "../php/list_animales.php";
                             ?>
 					</article>
-					<article class="lista_1">
+					<article class="lista_1" style="display:none;">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Nombre</p>
@@ -126,7 +126,7 @@
 								</a>
 							</div>
 					</article>
-					<article class="lista_2">
+					<article class="lista_2" style="display:none;">
 						<div class="list_usuarios">
                             <div class="bd_row brtitulo">
                                 <p>Usuario</p>
