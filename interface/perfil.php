@@ -191,10 +191,33 @@
     					<a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     					<a href="https://www.twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
     					<a href="https://www.snapchat.com/"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a> -->
-						<form class="" action="../php/cerrar_sesion.php" method="post">
+						<?php
+						if($user->mail == "admi.petfriend@gmail.com"){
+							echo <<<html
+							<form action="administrador.php">
+								<input type="submit" name="" value="Configuración" class="cerrar">
+							</form>
+							<form class="" action="../php/cerrar_sesion.php" method="post">
+								<br>
+								<input type="submit" name="" value="Cerrar Sesión" class="cerrar">
+							</form>
+							<br>
+
+html;
+						}else{
+							echo <<<html
+							<form class="" action="../php/cerrar_sesion.php" method="post">
 							<br>
 							<input type="submit" name="" value="Cerrar Sesión" class="cerrar">
-						</form>
+							</form>
+							<form class="" action="../php/eliminar_cuenta.php" method="post">
+							<br>
+							<input type="submit" name="" value="Eliminar cuenta" class="cerrar">
+							</form>
+html;
+						}
+						?>
+						
 
     				</div>
 
