@@ -49,7 +49,7 @@
 				</form>
 				<section>
 					<ul id="mostrar">
-						
+
 					</ul>
 				</section>
 			</article>
@@ -60,39 +60,37 @@
 
 				?>
 			</article>
-		
+
 			<article class="load">
 				<img src="../img/cargando.gif" alt="">
 			</article>
 
-			<!--<div id="lamascara" class="mascara">
-            <div class="contenido">
-            	<span class="cerrar">&times;</span>
-            	<div class="animal_div">
-                     <div class="animal_img">
-                         <img class="ani_img" src="../img/p_bird5.png">
-                     </div>
-                     <div class="animal_txt">
-                         <div class="texto_perfil">
-                             <p class="nombre_animal"><span class="uno">Nombre: </span> Ramona</p>
-                             <div class="posicion">
-                                <p class="sexo"><span class="dos">Sexo: </span> Hembra</p>
-                                 <p class="anios"><span class="tres">Años: </span> 1 año</p>
-                            </div>
-                             <p class="especie"><span class="cuatro">Especie:</span> El <span class="cinco">loro harinoso amazónico </span>(Amazona farinosa) es una especie de ave de la familia de los loros (Psittacidae) ampliamente distribuida desde Sudamérica, pasando por América Central, y hasta México. Habita en las selvas tropicales, espacios de árboles esparcidos y manglares. Se cría comúnmente en cautiverio.
-                            El amazona farinoso tiene una longitud total de 38 a 41 cm aproximadamente,1​2​ y pesa entre 540 y 700 g. El amazona farinoso es principalmente verde. La parte posterior y la nuca tienen generalmente un tono blanquecino, como si hubiese sido cubierto con una capa delgada de harina, que justifica su nombre.
-                            </p>
-                         </div>
-						 <div class="botones">
-							<a href="reservar.php"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
-							<a href="adoptar.php"> <button type="button" name="" class="btn_adop">Adóptalo</button></a>
-		                 </div>
-                    </div>
-                </div>
--->
-            </div>
-        </div>
-		<script type="text/javascript" src="../js/modal.js"></script>
+			<div id="lamascara" class="mascara">
+				<div class="contenido">
+					<a href=""><span class="cerrar">&times;</span></a>
+					<div class="animal_div">
+						<div class="animal_img">
+							<img class="ani_img" id="img_p" src="">
+						</div>
+						<div class="animal_txt">
+							<div class="texto_perfil">
+								<p class="nombre_animal"><span class="uno" id="vn_animal"></span></p>
+								<div class="posicion">
+									<p class="sexo"><span class="dos" id="vn_sexo"></span></p>
+									<p class="anios"><span class="tres" id="vn_anho"></span></p>
+								</div>
+								<p class="especie" id="vn_esp"><span class="cuatro" ></p>
+							</div>
+							<div class="botones">
+								<a href="reservar.php"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
+								<a href="adoptar.php"> <button type="button" name="" class="btn_adop">Adóptalo</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="../js/modal.js"></script>
+			
 
 		</main>
 	</div>
