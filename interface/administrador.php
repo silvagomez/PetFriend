@@ -82,9 +82,9 @@
                             <div class="bd_row brtitulo">
                                 <p>Teléfono</p>
                             </div>
-                            <div class="bd_row brtitulo bda">
+                            <!-- <div class="bd_row brtitulo bda">
                                 <p>Editar</p>
-                            </div>
+                            </div> -->
                             <div class="bd_row brtitulo bda">
                                 <p>Eliminar</p>
                             </div>

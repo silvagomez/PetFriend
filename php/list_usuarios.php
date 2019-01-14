@@ -19,7 +19,6 @@ sql;
                 <div class="bd_row">{$row['apellido']}</div>
                 <div class="bd_row">{$row['mail']}</div>
                 <div class="bd_row">{$row['telefono']}</div>
-                <div class="bd_row bda"><a href="#">editar</a></div>
                 <div class="bd_row bda"><a href="#" onclick="eliminar_user({$row['id_usuario']})">eliminar</a><br></div>
             </div>
 abc;

@@ -38,6 +38,7 @@ sql;
 
             $rows = $resultado->fetch_assoc();
 
+            $user-> id_usuario = $rows['id_usuario'];
             $user-> nombre = $rows['nombre'];
             $user-> apellido = $rows['apellido'];
             $user-> mail = $rows['mail'];
@@ -97,11 +98,11 @@ sql;
 
         }
 
-        public static function borrarUsuario($mail){
+        public static function borrarUsuario($id_usuario){
             $conexion=Conexion::getConexion();
 
             $q=<<<sql
-            DELETE * from usuario where mail='$mail'
+            DELETE from usuario where id_usuario='$id_usuario'
 sql;
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);

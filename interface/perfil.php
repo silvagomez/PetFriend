@@ -205,15 +205,14 @@
 
 html;
 						}else{
+							$id=$user->id_usuario;
 							echo <<<html
 							<form class="" action="../php/cerrar_sesion.php" method="post">
 							<br>
 							<input type="submit" name="" value="Cerrar Sesión" class="cerrar">
 							</form>
-							<form class="" action="../php/eliminar_cuenta.php" method="post">
 							<br>
-							<input type="submit" name="" value="Eliminar cuenta" class="cerrar">
-							</form>
+							<input type="submit" name="" value="Eliminar cuenta" class="cerrar" onclick="eliminar_cuenta($id)">
 html;
 						}
 						?>

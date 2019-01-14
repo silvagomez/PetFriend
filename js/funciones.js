@@ -54,11 +54,16 @@ function display_list(num) {
 }
 function eliminar_user(id_usuario) {
     if (confirm('Confirma eliminar usuario')) {
-       
-        alert(id_usuario);
+        location.href ="../php/eliminar_user.php?var="+id_usuario+"";
     } else {
         
     }
-    
+}
 
+function eliminar_cuenta(mail) {
+    if (confirm('Confirma eliminar cuenta')) {
+        location.href ="../php/eliminar_cuenta.php?var="+mail+"";
+    } else {
+        
+    }
 }
