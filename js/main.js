@@ -61,4 +61,7 @@ $(document).ready(function(){
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
 	}
 
-});
+
+
+  });
+

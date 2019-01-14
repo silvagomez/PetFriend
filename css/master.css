@@ -1076,7 +1076,7 @@ div.column_reserva label{
     font-weight: bold;
 }
 div.column_reserva input{
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     margin-top: 5px;
 
@@ -1097,6 +1097,12 @@ input.inpunt_basico2:hover{
 background-color: #b8bddb;
 }
 
+input.calendar{
+  /*  width: 50%;*/
+}
+.ui-datepicker table{
+    width: 50% !important;
+}
 /*********************************************************
 **********************************************************
 **********************************************************
