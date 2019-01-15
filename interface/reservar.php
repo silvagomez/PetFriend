@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/master.css">
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+	<link rel="stylesheet" href="../css/calendario.css">
 	<!--<link href="https://fonts.googleapis.com/css?family= Quicksand " rel="stylesheet">-->
 
 	<!--Zona para los scripts-->
