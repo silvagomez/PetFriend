@@ -82,7 +82,7 @@
 								<p class="especie" id="vn_esp"><span class="cuatro" ></p>
 							</div>
 							<div class="botones">
-								<a href="reservar.php"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
+								<a href="reservar.php" id="vn_link"> <button type="button" name="" class="btn_comp">Reservar tiempo</button></a>
 								<a href="adoptar.php"> <button type="button" name="" class="btn_adop">Adóptalo</button></a>
 							</div>
 						</div>

@@ -1,4 +1,4 @@
-function display_modal(nombre, sexo, edad, especie, img_perfil) {
+function display_modal(id, nombre, sexo, edad, especie, img_perfil) {
     var mascara = document.getElementById('lamascara');
     var btn_modal = document.getElementById("btn_modal");
     var img_modal = document.getElementById("img_modal");
@@ -18,6 +18,7 @@ function display_modal(nombre, sexo, edad, especie, img_perfil) {
     document.getElementById("vn_sexo").innerHTML="Sexo: "+sexo;
     document.getElementById("vn_anho").innerHTML="Años: "+edad;
     document.getElementById("vn_esp").innerHTML="Especie: "+especie;
+    document.getElementById("vn_link").href="../interface/reservar.php?pet="+nombre+"&id="+id;
     
     cerrar.onclick = function() {
         mascara.style.display = "none";

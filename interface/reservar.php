@@ -4,7 +4,8 @@
 	if (isset($_SESSION['user'])) {
 		$user=unserialize($_SESSION['user']);
 	}
-
+	$pet=$_REQUEST['pet'];
+	$id=$_REQUEST['id'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +42,7 @@
 					<form class="contenido_reserva" action="pago_reserva.php" method="post">
 						<div class="column_reserva">
 							<label>Compañero *</label>
-							<input type="text" name="" value="Ramona">
+							<input type="text" name="" value="<?php echo $pet; ?>">
 						</div>
 						<div class="column_reserva">
 							<label for="fecha">Inicio *</label>
