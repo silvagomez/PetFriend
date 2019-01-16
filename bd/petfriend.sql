@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-01-2019 a las 11:23:56
+-- Tiempo de generación: 16-01-2019 a las 13:02:35
 -- Versión del servidor: 5.7.21
--- Versión de PHP: 7.2.4
+-- Versión de PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `animal` (
   `imagen` varchar(500) DEFAULT NULL,
   `img_perfil` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_animal`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `animal`
@@ -82,7 +82,11 @@ INSERT INTO `animal` (`id_animal`, `nombre`, `especie`, `raza`, `edad`, `sexo`, 
 (15, 'Alf', 'El gallo y la gallina (Gallus gallus domesticus) son la subespecie domÃ©stica de la especie Gallus gallus, una especie de ave galliforme de la familia Phasianidae procedente del sudeste asiÃ¡tico. Los nombres comunes son: gallo, para el macho; gallina, para la hembra, y pollo, para los subadultos. Es el ave mÃ¡s numerosa del planeta, pues se calcula que el nÃºmero de ejemplares supera los 16 000 millones. Poseen dos tipos de protuberancias carunculares en la cabeza: una cresta en el pÃ­leo y unos lÃ³bulos que cuelgan a ambos lados del pico. El dorso lo cubre una capa de plumas doradas desde el cuello hasta la espalda.', 'Ave', 2, 'Macho', '../img/animales/a_bird4.png', '../img/animales/p_bird4.png'),
 (16, 'Coco', 'El canario domÃ©stico (Serinus canaria domestica)â€‹ es una subespecie desarrollada durante siglos de selecciÃ³n en cautividad partiendo de ejemplares del canario silvestre o canario salvaje (Serinus canaria), una especie de ave del orden paseriforme de la familia de los fringÃ­lidos, endÃ©mica de las islas Canarias, Azores y Madeira.â€‹  Es el ave domÃ©stica criada como animal de compaÃ±Ã­a mÃ¡s abundante del mundo junto con el periquito. A pesar de esto, no se conocen poblaciones asilvestradas.', 'Ave', 2, 'Hembra', '../img/animales/a_bird3.png', '../img/animales/p_bird3.png'),
 (17, 'Hulk', 'El periquito (Forpus passerinus) es una especie de ave de la familia de los loros (Psittacidae). Es tÃ­pico en zonas tropicales de SudamÃ©rica, de regiones caribeÃ±as como Colombia, Venezuela y Trinidad, al sur y al este de Guyana y, en Brasil, a lo largo del rÃ­o Amazonas. Ha sido llevado a Jamaica, Curazao, Barbados y Tobago, y no se tiene registrada su apariciÃ³n en Trinidad en perÃ­odos previos a 1916. Su hÃ¡bitat son los bosques abiertos y matorrales. La hembra pone de 5 a 7 huevos blancos en uno de los hoyos de un nido de termitas, en huecos de los troncos de los Ã¡rboles, e incluso en tuberÃ­as vacÃ­as, y los incuba por 18 dÃ­as, hasta que las crÃ­as rompan el cascarÃ³n, y pasan otras 5 semanas aproximadamente para que a Ã©stas les salgan plumas.', 'Ave', 3, 'Macho', '../img/animales/a_bird2.png', '../img/animales/p_bird2.png'),
-(18, 'Otto', 'Esta raza de perros fue creada para ayudar en la caza del zorro. Antes de su creaciÃ³n, la cacerÃ­a solÃ­a acabar en fracaso en cuanto el zorro alcanzara su guarida. La introducciÃ³n del fox terrier en la caza resolviÃ³ parcialmente este problema: cuando el zorro se trataba de escabullir bajo tierra, el terrier era enviado en su bÃºsqueda. Esto dio lugar a los requerimientos concretos de esta raza: en primer lugar, tener la resistencia necesaria para correr junto al grupo de cacerÃ­a, segundo, ser lo suficientemente pequeÃ±o para introducirse en la guarida del zorro, y tercero, ser duro y fuerte, ya que un zorro acorralado en su guarida podrÃ­a tratar de repeler al intruso y generar un enfrentamiento.', 'Perro', 3, 'Macho', '../img/animales/a_can5.png', '../img/animales/p_can5.png');
+(18, 'Otto', 'Esta raza de perros fue creada para ayudar en la caza del zorro. Antes de su creaciÃ³n, la cacerÃ­a solÃ­a acabar en fracaso en cuanto el zorro alcanzara su guarida. La introducciÃ³n del fox terrier en la caza resolviÃ³ parcialmente este problema: cuando el zorro se trataba de escabullir bajo tierra, el terrier era enviado en su bÃºsqueda. Esto dio lugar a los requerimientos concretos de esta raza: en primer lugar, tener la resistencia necesaria para correr junto al grupo de cacerÃ­a, segundo, ser lo suficientemente pequeÃ±o para introducirse en la guarida del zorro, y tercero, ser duro y fuerte, ya que un zorro acorralado en su guarida podrÃ­a tratar de repeler al intruso y generar un enfrentamiento.', 'Perro', 3, 'Macho', '../img/animales/a_can5.png', '../img/animales/p_can5.png'),
+(19, 'Bugs bunny', 'El conejo comÃºn o conejo europeo (Oryctolagus cuniculus) es una especie de mamÃ­fero lagomorfo de la familia Leporidae, y el Ãºnico miembro actual del gÃ©nero Oryctolagus. EstÃ¡ incluido en la lista 100 de las especies exÃ³ticas invasoras mÃ¡s daÃ±inas del mundo3â€‹ de la UniÃ³n Internacional para la ConservaciÃ³n de la Naturaleza.', 'Roedor', 2, 'Macho', '../img/animales/a_rod1.png', '../img/animales/p_rod1.png'),
+(21, 'Bidoof', 'MamÃ­fero roedor sudamericano, estrictamente herbÃ­voro. Pesa alrededor de un kilo, vive en Ã¡reas abiertas y utiliza hoyos y madrigueras para ocultarse y protegerse. Tiene una longevidad de cuatro a seis aÃ±os. Los incas domesticaron y criaron estos roedores para aprovechar su carne y su piel.', 'Roedor', 4, 'Hembra', '../img/animales/a_rod4.png', '../img/animales/p_rod4.png'),
+(22, 'Scrat', 'Es un mamÃ­fero de pequeÃ±o tamaÃ±o, su cuerpo es alargado y estrecho, con una larga cola de aspecto esponjoso y muy poblada de pelo', 'Roedor', 12000, 'Macho', '../img/animales/a_rod5.png', '../img/animales/p_rod5.png'),
+(23, 'Hamtaro', 'Los cricetinos (Cricetinae) son una subfamilia de roedores, conocidos comÃºnmente como hÃ¡msteres (un germanismo). Se han identificado diecinueve especies actuales distintas, agrupadas en siete gÃ©neros. La mayorÃ­a son originarias de Oriente Medio y del sureste de los Estados Unidos. Al ser muy fÃ¡ciles de criar en cautividad, son ampliamente usados como mascotas. Todas las especies se caracterizan por las bolsas expansibles, llamadas abazones, ubicadas en el interior de la boca y que van desde las mejillas hasta los hombros', 'Roedor', 4, 'Macho', '../img/animales/a_rod6.png', '../img/animales/p_rod6.png');
 
 -- --------------------------------------------------------
 
