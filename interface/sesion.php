@@ -46,7 +46,7 @@
                             <!-- <span class="checkmark"></span> -->
                         </article>
                         <div class="ayuda">
-                            <a href="#">¿Necesitas ayuda?</a>
+                            <a href="contacto.php">¿Necesitas ayuda?</a>
                         </div>
                     </section>
                     <section class="pantalla_central">

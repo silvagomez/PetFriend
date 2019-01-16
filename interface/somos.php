@@ -50,7 +50,7 @@
 
             </article>
 			<article class="mapa">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1727.5062085312447!2d-2.940599625698522!3d43.26593214735606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1538043067531" width="1024" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eS0LEKPqoXHB9dJha66eXNuZKZlxeliy" width="1024" height="400"></iframe>
 			</article>
 
 		</main>

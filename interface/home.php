@@ -76,7 +76,7 @@
 			<article class="exp">
 				<div class="miexp izq">
 					<div class="exp_img">
-						<img src="../img/op1.png" class="op">
+						<img src="../img/usuarios/op1.png" class="op">
 				</div>
 						<div class="exp_txt">
 							<h3 class="experiencia">
@@ -92,7 +92,7 @@
 					</div>
 					<div class="miexp drch">
 						<div class="exp_img">
-							<img src="../img/op2.png" class="op">
+							<img src="../img/usuarios/op2.png" class="op">
 				</div>
 							<div class="exp_txt">
 								<h3 class="experiencia">
