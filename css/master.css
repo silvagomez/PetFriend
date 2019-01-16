@@ -469,6 +469,12 @@ div.propiedad {
 article.buscador {
     margin: 30px;
     text-align: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex: 1 1 auto; */
+    width: 100%;
+    background-color: RED;
+    
 }
 
 select.bus_animal{

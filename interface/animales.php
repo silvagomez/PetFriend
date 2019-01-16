@@ -35,18 +35,20 @@
 	<div class="wrapper w2">
 		<main>
 			<article class="buscador">
-				<select class="bus_animal" name="">
-					<option value="" disabled:selected>Animales</option>
-					<option value="">Perro</option>
-					<option value="">Gato</option>
-					<option value="">Pájaro</option>
-					<option value="">Pez</option>
-					<option value="">Reptil</option>
-				</select>
-				<form autocomplete="off">
+				<form autocomplete="off" style="width:50%;">
 					<input class="search" type="text" placeholder=" Cuatro patas..." id="busqueda" name="buscar" onkeyup="buscar_ajax(this.value);">
 					<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
 				</form>
+				<select class="bus_animal" name="" id="rz">
+					<option value="Animales" disabled:selected>Animales</option>
+					<option value="Perro">Perro</option>
+					<option value="Gato">Gato</option>
+					<option value="Ave">Ave</option>
+					<option value="Pez">Pez</option>
+					<option value="Reptil">Reptil</option>
+				</select>
+				<button type="submit" class="icono_ani" onclick="miFiltro()">Aplicar filtro</button>
+				<!-- <input type="submit"    value="Aplicar" onclick="miFiltro()"> -->
 				<section>
 					<ul id="mostrar">
 

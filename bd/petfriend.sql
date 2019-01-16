@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 09-01-2019 a las 09:19:37
+-- Tiempo de generación: 16-01-2019 a las 11:23:56
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.2.4
 
@@ -68,10 +68,10 @@ CREATE TABLE IF NOT EXISTS `animal` (
 INSERT INTO `animal` (`id_animal`, `nombre`, `especie`, `raza`, `edad`, `sexo`, `imagen`, `img_perfil`) VALUES
 (2, 'Ramona', 'El loro harinoso amazÃ³nico (Amazona farinosa) es una especie de ave de la familia de los loros (Psittacidae) ampliamente distribuida desde SudamÃ©rica, pasando por AmÃ©rica Central, y hasta MÃ©xico. Habita en las selvas tropicales, espacios de Ã¡rboles esparcidos y manglares. Se crÃ­a comÃºnmente en cautiverio. El amazona farinoso tiene una longitud total de 38 a 41 cm aproximadamente,1â€‹2â€‹ y pesa entre 540 y 700 g. El amazona farinoso es principalmente verde. La parte posterior y la nuca tienen generalmente un tono blanquecino, como si hubiese sido cubierto con una capa delgada de harina, que justifica su nombre.', 'Ave', 1, 'Hembra', '../img/animales/a_bird5.png', '../img/animales/p_bird5.png'),
 (3, 'Margarita', 'El periquito mide alrededor de 18 cm de la cabeza a la punta de la cola, y pesa alrededor de 35 g. La variedad silvestre tiene las partes inferiores de color verde claro liso, con la cabeza amarilla con un caracterÃ­stico listado negro en su parte posterior, al igual que el resto de las partes superiores del cuerpo y alas, aunque con fondo verde amarillento. En cambio su garganta y frente son de color amarillo liso, con una pequeÃ±a mancha morada en la mejilla y tres motas negras enmarcando cada lateral de base de la garganta. ', 'Ave', 2, 'Hembra', '../img/animales/a_bird1.png', '../img/animales/p_bird1.png'),
-(4, 'Nyah', 'El ragdoll es un gato de pelaje largo o semilargo, con tres variedades de patrÃ³n: colorpoint, bicolor, y mitted. Los colorpoint (tambiÃ©n conocido como gen siamÃ©s) se identifican porque tienen un color diferente al blanco en las extremidades, los bicolor dos colores y los mitted porque tienen barbilla blanca y \"guantecitos\" blancos.  Los colores del pelaje pueden ser marrÃ³n (seal), grisÃ¡ceo (blue), chocolate, y lila, tanto en la cara como en los pies. TambiÃ©n existen con otros colores menos tradicionales como crema, rojizo como una llama (flame) y tipo lince.', 'Gato', 2, 'Macho', '../img/animales/a_cat1.png', '../img/animales/p_cat1.png'),
+(4, 'Nyah', 'El ragdoll es un gato de pelaje largo o semilargo, con tres variedades de patrÃ³n: colorpoint, bicolor, y mitted. Los colorpoint (tambiÃ©n conocido como gen siamÃ©s) se identifican porque tienen un color diferente al blanco en las extremidades, los bicolor dos colores y los mitted porque tienen barbilla blanca y guantecitos blancos.  Los colores del pelaje pueden ser marrÃ³n (seal), grisÃ¡ceo (blue), chocolate, y lila, tanto en la cara como en los pies. TambiÃ©n existen con otros colores menos tradicionales como crema, rojizo como una llama (flame) y tipo lince.', 'Gato', 2, 'Macho', '../img/animales/a_cat1.png', '../img/animales/p_cat1.png'),
 (5, 'Tomate', 'Cuando perros de distinta raza se mezclan, su descendencia manifiesta una amplia variedad de apariencias, algunos se asemejan mÃ¡s a una raza que a otra, mientras que algunos otros exhiben claramente caracterÃ­sticas de ambas. Sin embargo, si los ejemplares se siguen entrecruzando, en las generaciones posteriores poco a poco se irÃ¡n homogenizando sus caracterÃ­sticas hasta llegar a un aspecto mÃ¡s o menos similar.', 'Perro', 4, 'Macho', '../img/animales/a_can1.png', '../img/animales/p_can1.png'),
 (6, 'Tiburoncin', 'Son generalmente diurnos y de aguas superficiales de menos de 18 m (algunas sin embargo llegan hasta 180 m), y estos coralÃ­voros son muy territoriales en el coral. En contraste, los que comen zooplancton forman grandes grupos conespecÃ­ficos. De noche permanencen en las hendeduras y grietas del arrecife y exhibe marcadas diferencias de coloraciÃ³n con el diurno.  Son pelÃ¡gicos de freza; o sea, mantienen sus huevos boyantes en el agua convirtiÃ©ndose en parte del plancton, flotando en las corrientes hasta la eclosiÃ³n. Los pequeÃ±os seres pasan por el estadio tolichtis, donde el cuerpo del pez postlarval se cubre de lÃ¡minas extendiÃ©ndose en su cabeza. Este estadio curioso, armado ocurre solo en otra sola familia de peces; los Scatophagidae. Luego el pez pierde esas lÃ¡minas al madurar.', 'Pez', 1, 'Macho', '../img/animales/a_fish2.png', '../img/animales/p_fish2.png'),
-(7, 'Rene', 'Iguana es un gÃ©nero de sauropsidos (reptiles) escamosos de la familia Iguanidae nativos de zonas tropicales de CentroamÃ©rica, SudamÃ©rica y el Caribe.[cita requerida] Fue descrito por primera vez por el naturalista austrÃ­aco Josephus Nicolaus Laurenti en su libro Specimen Medicum, Exhibens Synopsin Reptilium Emendatam cum Experimentis circa Venena en 1768. El gÃ©nero Iguana incluye dos especies: la iguana verde (Iguana iguana) y la iguana del Caribe (Iguana delicatissima).  La palabra Â«iguanaÂ» deriva del nombre taÃ­no para este animal: iwana. Iguana iguana es la especie de este gÃ©nero mÃ¡s usada para la crÃ­a en cautiverio.', 'Iguana', 3, 'Hembra', '../img/animales/a_rept1.png', '../img/animales/p_rept1.png'),
+(7, 'Rene', 'Iguana es un gÃ©nero de sauropsidos (reptiles) escamosos de la familia Iguanidae nativos de zonas tropicales de CentroamÃ©rica, SudamÃ©rica y el Caribe.[cita requerida] Fue descrito por primera vez por el naturalista austrÃ­aco Josephus Nicolaus Laurenti en su libro Specimen Medicum, Exhibens Synopsin Reptilium Emendatam cum Experimentis circa Venena en 1768. El gÃ©nero Iguana incluye dos especies: la iguana verde (Iguana iguana) y la iguana del Caribe (Iguana delicatissima).  La palabra Â«iguanaÂ» deriva del nombre taÃ­no para este animal: iwana. Iguana iguana es la especie de este gÃ©nero mÃ¡s usada para la crÃ­a en cautiverio.', 'Reptil', 3, 'Hembra', '../img/animales/a_rept1.png', '../img/animales/p_rept1.png'),
 (8, 'Jack', 'El Chartreux es una de las mÃ¡s antiguas razas de gatos en el mundo natural. Es nativo de las fronteras de TurquÃ­a e IrÃ¡n, su pelaje lanoso caracterÃ­stico le dio una ventaja en los climas duros. En la Ã©poca de las Cruzadas, los cartujos fueron traÃ­dos en los buques de comercio entre Oriente y Occidente.  SegÃºn la leyenda, la raza se llama \"Cartujo\", ya que vivÃ­an en los monasterios de los monjes cartujos y era utilizado para cazar ratas en un momento en que la peste bubÃ³nica se habÃ­a desenfrenado en toda Europa. El gato se habrÃ­a dado un voto de silencio, un rasgo que persiste hasta el dÃ­a de hoy ya que los Cartujos maÃºllan muy poco. Otra explicaciÃ³n mÃ¡s plausible dice que este gato, durante el siglo XVIII, fue nombrado asÃ­ por la lana densa espaÃ±ola \"pila de cartujos\". La piel de un Cartujo adulto es muy densa, lanosa e impermeable.', 'Gato', 2, 'Hembra', '../img/animales/a_cat5.png', '../img/animales/p_cat5.png'),
 (9, 'Blue', 'on perros que responden bien al adiestramiento y adecuadamente socializados serÃ¡n amigables. Son utilizados principalmente como perros de compaÃ±Ã­a. Entre las principales cualidades que hacen de esta raza de perro la favorita de muchos se encuentran su carÃ¡cter alegre y su pequeÃ±o tamaÃ±o, Ã³ptimo para espacios pequeÃ±os y apartamentos. AdemÃ¡s, son animales de fÃ¡cil mantenimiento, porque su pelo corto y su tamaÃ±o lo hacen fÃ¡ciles de cepillar y entrenar. Viven alrededor de 12 aÃ±os.', 'Perro', 2, 'Hembra', '../img/animales/a_can2.png', '../img/animales/p_can2.png'),
 (10, 'Tortitas', 'El pato domÃ©stico (Anas platyrhynchos domesticus) es una subespecie de ave anseriforme de la familia Anatidae. Su peso es de entre 3,6 y 4,1 kg, aunque se han desarrollado variedades mayores. Su plumaje es blanco y tiene el pico, las piernas y las patas de color naranja. Algunos pueden tener el pico mÃ¡s amarillo, pero si tienen el pico negro se considera una seria falta en la clasificaciÃ³n. El Pato PekÃ­n blanco es un pato de rÃ¡pido crecimiento; y los pollos son fÃ¡ciles de distinguir de los adultos porque tienen un plumaje brillante y amarillo.', 'Ave', 1, 'Hembra', '../img/animales/a_bird6.png', '../img/animales/p_bird6.png'),
@@ -87,11 +87,25 @@ INSERT INTO `animal` (`id_animal`, `nombre`, `especie`, `raza`, `edad`, `sexo`, 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cliente`
+-- Estructura de tabla para la tabla `pago`
 --
 
-DROP TABLE IF EXISTS `cliente`;
-CREATE TABLE IF NOT EXISTS `cliente` (
+DROP TABLE IF EXISTS `pago`;
+CREATE TABLE IF NOT EXISTS `pago` (
+  `id_pago` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_pago` varchar(50) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  PRIMARY KEY (`id_pago`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
   `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
@@ -111,27 +125,13 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `cliente`
+-- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `cliente` (`id_usuario`, `nombre`, `apellido`, `mail`, `fecha_nacimiento`, `dni_pass`, `sexo`, `telefono`, `direccion`, `provincia`, `cp`, `nom_user`, `password`, `img`) VALUES
+INSERT INTO `usuario` (`id_usuario`, `nombre`, `apellido`, `mail`, `fecha_nacimiento`, `dni_pass`, `sexo`, `telefono`, `direccion`, `provincia`, `cp`, `nom_user`, `password`, `img`) VALUES
 (1, 'admin', 'petfriend', 'admi.petfriend@gmail.com', '1984-01-08', '12345678x', 'mujer', 1231231234, 'direccion1', 'alava', 1400, 'administrador', 'romaol2', ''),
 (2, 'diego', 'silva', 'silva@gmail.com', '2016-01-05', '147852369q', 'Hombre', 987654565, 'dire2', 'Vizcaya', 54786, 'dieguito', 'romaol2', '../img/usuarios/op1.png'),
 (3, 'queen', 'calva', 'queen@gmail.com', '2000-01-28', '3214568d', 'Hombre', 541236547, 'dire3', 'vizcaya', 56984, 'queen', 'romaol2', '');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `pago`
---
-
-DROP TABLE IF EXISTS `pago`;
-CREATE TABLE IF NOT EXISTS `pago` (
-  `id_pago` int(11) NOT NULL AUTO_INCREMENT,
-  `tipo_pago` varchar(50) NOT NULL,
-  `cantidad` int(11) NOT NULL,
-  PRIMARY KEY (`id_pago`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Restricciones para tablas volcadas
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `pago` (
 --
 ALTER TABLE `alquiler`
   ADD CONSTRAINT `alquiler_ibfk_1` FOREIGN KEY (`ide_animalfk`) REFERENCES `animal` (`id_animal`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `alquiler_ibfk_2` FOREIGN KEY (`id_usuariokf`) REFERENCES `cliente` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `alquiler_ibfk_2` FOREIGN KEY (`id_usuariokf`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `alquiler_ibfk_3` FOREIGN KEY (`id_pagofk`) REFERENCES `pago` (`id_pago`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 

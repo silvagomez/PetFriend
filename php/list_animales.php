@@ -15,7 +15,7 @@ sql;
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo <<<abc
             
-                <div class="animalito">
+                <div class="animalito {$row["raza"]}" style="display:block;">
                     <figure>
                         <a href="#" id="img_modal" onclick="display_modal('{$row["id_animal"]}','{$row["nombre"]}', '{$row["sexo"]}', '{$row["edad"]}', '{$row["especie"]}', '{$row["img_perfil"]}')">
                             <img src="{$row['imagen']}" class="a_pet">
