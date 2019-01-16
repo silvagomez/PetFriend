@@ -65,6 +65,8 @@
 				<img src="../img/cargando.gif" alt="">
 			</article>
 
+			<!-- inicio modal -->
+
 			<div id="lamascara" class="mascara">
 				<div class="contenido">
 					<a href=""><span class="cerrar">&times;</span></a>
