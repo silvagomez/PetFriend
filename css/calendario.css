@@ -56,7 +56,7 @@ datepicker table tr td.day:hover,
 .ui-datepicker-header {
     border-radius: 0px !important;
     background-color: #ededed !important;
-    background: #ededed !important;
+    background: #bd94c4 !important;
     border: none !important;
 }
 .ui-datepicker-next {
