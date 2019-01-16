@@ -35,10 +35,10 @@
 	<div class="wrapper w2">
 		<main>
 			<article class="buscador">
-				<form autocomplete="off" style="width:50%;">
+				<!-- <form autocomplete="off"> -->
 					<input class="search" type="text" placeholder=" Cuatro patas..." id="busqueda" name="buscar" onkeyup="buscar_ajax(this.value);">
 					<!--<button type="submit" class="lookup"><i class="fa fa-search"></i></button>-->
-				</form>
+				<!-- </form> -->
 				<select class="bus_animal" name="" id="rz">
 					<option value="Animales" disabled:selected>Animales</option>
 					<option value="Perro">Perro</option>
