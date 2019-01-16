@@ -514,9 +514,9 @@ button.lookup .fa{
 ul#mostrar{
     background-color: #5e548e;
     position: absolute;
-    width: 43.6%;
-    margin: 0px 0px 0px 283px;
-    z-index: 9;
+    width: 45.8%;
+    margin: 0px 0px 0px 123px;
+    z-index: 5;
 }
 li.busc{
     color: white;
