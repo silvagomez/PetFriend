@@ -49,14 +49,16 @@ datepicker table tr td.day:hover,
     background: #f8f8f8;
 } 
 .ui-datepicker {
-    width: 15.20em !important;
+    width: 16% !important;
     font-family: 'Jaldi', sans-serif !important;
     border: 1px solid #ccc !important;
+    margin-left: -57px !important;
+    margin-top: 20px !important;
 }
 .ui-datepicker-header {
-    border-radius: 0px !important;
+    border-radius: 2px !important;
     background-color: #ededed !important;
-    background: #ededed !important;
+    background: #bd94c4 !important;
     border: none !important;
 }
 .ui-datepicker-next {
@@ -89,12 +91,12 @@ datepicker table tr td.day:hover,
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {
     background: none !important;
-    background-color: #eaeaea !important;
-    border: 1px solid #A51E1E !important;
+    background-color: #bd94c4 !important;
+    border: 1px solid#221841!important;
     border-radius: 10% !important;
 }
 .ui-state-active, .ui-widget-content .ui-state-active {
-    background-color: #a1a1a1 !important;
+    background-color:#bd94c4  !important;
     color: whitesmoke !important;
     font-weight: bold !important;
     border: 1px solid #d3d3d3 !important;
@@ -131,3 +133,4 @@ datepicker table tr td.day:hover,
     float: left !important; 
     padding: 0 !important;
 }
+.ui-widget-content
