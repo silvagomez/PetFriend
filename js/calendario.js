@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  
+
+  
     $(function() {
       $('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
@@ -10,7 +13,8 @@ $(document).ready(function() {
         buttonImageOnly: true,*/
         minDate: 'hoy',
         maxDate: '+3M',
-        inline: true
+        inline: true,
+        
       });
       $('.datepicker2').datepicker({
         dateFormat: 'dd/mm/yy',
@@ -20,7 +24,7 @@ $(document).ready(function() {
         /*showOn: "button",
         buttonImage: "images/calendar.gif",
         buttonImageOnly: true,*/
-        minDate: '',
+        minDate: 'hoy+1D',
         maxDate: '+3M',
         inline: true
       });
