@@ -39,7 +39,7 @@
         <article class="usuario">
         <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
         <input type="password" name="password" class="password" placeholder="Contraseña">
-    </article>
+        </article>
 abc;
     }
 ?>
