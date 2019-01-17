@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="w3">
+     <div class="w3">
         <main>
             <div class="logo2">
                 <a href="home.php"><img class="img_logo2" src="../img/logo.png"></a>
@@ -26,43 +26,55 @@
             <div class="gemelos">
                 <section class="pantalla_central">
 
-                    <form class="" action="../php/loginControlador.php" method="post">
+                     <form class="" action="../php/loginControlador.php" method="post">
 
-                        <article class="titulo_sesion">
-                            <h2>INICIAR SESIÓN</h2>
-                        </article>
+                         <article class="titulo_sesion">
+                             <h2>INICIAR SESIÓN</h2>
+                         </article>
+<?php
 
-                        <article class="usuario">
-                            <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
-                            <input type="password" name="password" class="password" placeholder="Contraseña">
-                        </article>
+    if(isset($_COOKIE['user'])){
 
-                        <article class="enviar">
-                            <input type="submit" name="Iniciar sesión" value="INICIAR SESIÓN" class="btn">
-                        </article>
+        echo<<<abc
+        <article class="usuario">
+        <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
+        <input type="password" name="password" class="password" placeholder="Contraseña">
+    </article>
+abc;
+    }
+?>
+                         <article class="usuario">
+                             <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
+                             <input type="password" name="password" class="password" placeholder="Contraseña">
+                         </article>
 
-                        <article class="recuerdame">
-                            <label><input type="checkbox" name="Recuérdame">Recuérdame</label>
-                            <!-- <span class="checkmark"></span> -->
-                        </article>
-                        <div class="ayuda">
-                            <a href="contacto.php">¿Necesitas ayuda?</a>
-                        </div>
-                    </section>
-                    <section class="pantalla_central">
-                        <article class="titulo_sesion">
-                            <h2>¿Quieres formar parte de PetFiend?</h2>
-                        </article>
-                        <p class="pc1">Si todavia no tienes una cuenta en PetFriend aquí te dejamos el formulario.</p>
-                        <input type="button" name="" value="CREAR CUENTA" class="btn" onclick="location.href='registro.php'">
+                         <article class="enviar">
+                             <input type="submit" name="Iniciar sesión" value="INICIAR SESIÓN" class="btn">
+                         </article>
 
-                    </form>
+                         <article class="recuerdame">
+                             <label><input type="checkbox" name="Recuérdame">Recuérdame</label>
+                             <!-- <span class="checkmark"></span> -->
+                         </article>
+                         <div class="ayuda">
+                             <a href="contacto.php">¿Necesitas ayuda?</a>
+                         </div>
+                     </section>
+                     <section class="pantalla_central">
+                         <article class="titulo_sesion">
+                             <h2>¿Quieres formar parte de PetFiend?</h2>
+                         </article>
+                         <p class="pc1">Si todavia no tienes una cuenta en PetFriend aquí te dejamos el formulario.</p>
+                         <input type="button" name="" value="CREAR CUENTA" class="btn" onclick="location.href='registro.php'">
+
+                     </form>
 
 			    </section>
 
             </div>
         </main>
-    </div>
+    </div> 
+
 </body>
 
 </html>
