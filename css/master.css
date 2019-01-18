@@ -596,13 +596,13 @@ div.animalito button:hover{
 						CARGADOR
 **********************************************************/
 article.load {
-    margin: 50px;
+    margin: 50px -15PX;
     text-align: center;
     width: 100%;
     /* padding: 10px; */
 }
 article.load img{
-    max-width: 25%;
+    max-width: 30%;
     height: auto;
 }
 

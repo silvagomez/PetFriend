@@ -2,9 +2,9 @@
     require_once("conexion.php");
 
     $conexion=Conexion::getConexion();
-
+    
     $q=<<<sql
-    SELECT * FROM animal
+    SELECT * FROM animal  
 sql;
     $resultado=$conexion->query($q);
 
@@ -22,7 +22,7 @@ sql;
                         </a>
                         <figcaption>
                             <button type="button" name="button" class="nombre_ani" id="btn_modal" onclick="display_modal('{$row["id_animal"]}','{$row["nombre"]}', '{$row["sexo"]}', '{$row["edad"]}', '{$row["especie"]}', '{$row["img_perfil"]}')">{$row['nombre']}</button>
-                            <button type="button" name="button" class="icono_ani" id="demo" onclick=corazoncito($num)> <i class="fa fa-heart" aria-hidden="true"></i> </button>
+                            <button type="button" name="button" class="icono_ani"> <i class="fa fa-heart" aria-hidden="true"></i> </button>
                             <button type="button" name="button" class="icono_ani"> <i class="fa fa-share-alt" aria-hidden="true"></i> </button>
                         </figcaption>
                     </figure>

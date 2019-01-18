@@ -65,7 +65,7 @@
 			</article>
 
 			<article class="load">
-				<img src="../img/cargando.gif" alt="">
+				<a href="animales.php"><img src="../img/cargando.gif" alt=""></a>
 			</article>
 
 			<!-- inicio modal -->
