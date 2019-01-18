@@ -13,15 +13,14 @@
         if ($usuario->mail == 'admi.petfriend@gmail.com') {
             //admi
             if($_REQUEST['recordar']=="recordar"){
-            setcookie("usu","$mail", time() +60*60*24*365);
+            setcookie("pet","$mail", time() +60*60*24*365);
             }
-
             header("Location: ../interface/administrador.php");
 
         }else {
             //usuarios
             if($_REQUEST['recordar']=="recordar"){
-                setcookie("usu","$mail", time() +60*60*24*365);
+                setcookie("pet","$mail", time() +60*60*24*365);
                 }
             header("Location: ../interface/perfil.php");
         }
@@ -32,7 +31,7 @@
     }
 
      
-    if(isset($_REQUEST['mail'])){
-        setcookie('user',$_REQUEST['mail'],time()+60*60*24*365);
-    }
+    // if(isset($_REQUEST['mail'])){
+    //     setcookie('user',$_REQUEST['mail'],time()+60*60*24*365);
+    // }
 ?>

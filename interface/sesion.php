@@ -1,4 +1,16 @@
 <?php
+	session_start();
+	if (isset($_COOKIE['pet'])) {
+        require_once "../php/conexion.php";
+        $conexion=Conexion::getConexion();
+        $mail=$_COOKIE['user'];
+        $result=mysqli_query($conexion, "SELECT mail FROM usuario where mail=".$mail."");
+        if (mysqli_num_rows($result)) {
+            $arr=mysqli_fetch_array($result);
+            $_SESSION['user']=$arr['user'];
+            
+        }
+    }
 
 ?>
 <!DOCTYPE html>
@@ -47,7 +59,7 @@
                          </article>
 
                          <article class="recuerdame">
-                             <label><input type="checkbox" name="recordar">Recuérdame</label>
+                             <label><input type="checkbox" name="recordar" value="recordar">Recuérdame</label>
                              <!-- <span class="checkmark"></span> -->
                          </article>
                          <div class="ayuda">
