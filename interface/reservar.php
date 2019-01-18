@@ -28,7 +28,7 @@
 	<!--Zona para los scripts-->
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js" refer></script>
-	<script src="../js/calendario.js" async refer></script>
+	<!-- <script src="../js/calendario.js" async refer></script> -->
 </head>
 
 <body>
@@ -46,11 +46,11 @@
 						</div>
 						<div class="column_reserva">
 							<label for="fecha">Inicio *</label>
-							<input autocomplete="off" placeholder="dd/mm/aa" id="fecha" name="" value="" class="datepicker calendar" >
+							<input autocomplete="off" placeholder="dd/mm/aa" id="start-date" name="" value="" class="datepicker calendar" >
 						</div>
 						<div class="column_reserva">
 							<label>Fin *</label>
-							<input  autocomplete="off"  placeholder="dd/mm/aa" name="" value=""  class="datepicker2 calendar">
+							<input  autocomplete="off"  placeholder="dd/mm/aa" id="end-date" name="" value=""  class="datepicker2 calendar">
 						</div>
 						<div class="column_reserva2">
 							<input type="submit" name=""  value="RESERVAR" class="inpunt_basico2">
@@ -58,7 +58,7 @@
 					</form>
 				</div>
             </article>
-
+			<script src="../js/calendario.js"></script>
 		</main>
 	</div>
 	<?php
