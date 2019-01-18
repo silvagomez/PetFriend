@@ -1,4 +1,5 @@
-function corazoncito(){
+function corazoncito(num){
+    
     document.getElementById("demo").style.color = "red";
 }
 

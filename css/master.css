@@ -580,10 +580,11 @@ button.icono_ani{
     width: 20%;
     box-shadow: 0px 1px 3px #404041;
     cursor: pointer;
+    font-weight: bold;
 }
-/* button.icono_ani:active{
-    color: red;
-} */
+button.icono_ani:hover{
+    background-color: #BD94C4;
+}
 button.icono_ani .fa{
     margin: 0;
 }
