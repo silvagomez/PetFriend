@@ -31,6 +31,7 @@
 <body>
 	<?php
 	require_once 'header.php';
+	require_once 'msj_cookies.php';
 	?>
 	<div class="wrapper w2">
 		<main>

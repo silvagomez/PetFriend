@@ -1445,38 +1445,43 @@ div.bda{
 }
 
 article.ventana_cookies{
-   background-color: #000000b8;
-    /* position: fixed; */
+    background-color: #000000b8;
+    position: fixed;
     width: 100%;
-    height: 190px;
-    color: #fff;    
+    height: 140px;
+    color: #fff;
+    z-index: 5;
+    margin-top: 486px;  
+    display: flex;
+ }
+     div.p_cookies{
+         width: 80%;
+         padding: 1.2%;
+ } 
+         p.mensaje_cookies{
+             padding-left: 20px;
+             padding-top: 20px;
+             padding-right: 15px;
+             text-align: left;
+             font-family: 'Quicksand';
+         }
+ 
+     div.b_cookies{
+        width: 20%;
+        text-align: center;
+     }
 
-}
-    div.p_cookies{
-        width: 80%;
-} 
-        p.mensaje_cookies{
-            padding-left: 20px;
-            padding-top: 20px;
-            padding-right: 15px;
-            text-align: left;
-        }
-
-    div.b_cookies{
-        width: 35%;
-        height: 30px;
-        margin-bottom: 20px;
+     button.btn_cookies{
+        width: 50%;
+        height: 41px;
+        margin-top: 60px;
         border-radius: 5px;
         border: none;
         background-color: #b8bddb;
         cursor: pointer;
-    }
+        font-family: 'Quicksand';
+        font-weight: bold;
+        font-size: 16px;
+     }
 
 
-
-
-
-
-        }  
-
-    }
