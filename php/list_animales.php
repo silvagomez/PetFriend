@@ -28,7 +28,7 @@ sql;
                     </figure>
                 </div>
 abc;
-            $num++;
+$num++;
         }
 
     }
