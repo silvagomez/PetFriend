@@ -46,6 +46,7 @@
 					<option value="Ave">Ave</option>
 					<option value="Pez">Pez</option>
 					<option value="Reptil">Reptil</option>
+					<option value="Roedor">Roedor</option>
 				</select>
 				<button type="submit" class="icono_ani" onclick="miFiltro()">Aplicar filtro</button>
 				<!-- <input type="submit"    value="Aplicar" onclick="miFiltro()"> -->

@@ -52,6 +52,12 @@ function miFiltro(){
                 n++;
             }
             n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="block";
+                n++;
+            }
+            n=0;
         break;
 
         case 'Perro':
@@ -83,6 +89,12 @@ function miFiltro(){
             var rept=document.getElementsByClassName("Reptil");
             while (n<rept.length) {
                 rept[n].style.display="none";
+                n++;
+            }
+            n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="none";
                 n++;
             }
             n=0;
@@ -120,6 +132,12 @@ function miFiltro(){
                 n++;
             }
             n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="none";
+                n++;
+            }
+            n=0;
         break;
 
         case 'Ave':
@@ -151,6 +169,12 @@ function miFiltro(){
             var rept=document.getElementsByClassName("Reptil");
             while (n<rept.length) {
                 rept[n].style.display="none";
+                n++;
+            }
+            n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="none";
                 n++;
             }
             n=0;
@@ -188,6 +212,12 @@ function miFiltro(){
                 n++;
             }
             n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="none";
+                n++;
+            }
+            n=0;
         break;
         
         case 'Reptil':
@@ -222,8 +252,52 @@ function miFiltro(){
                 n++;
             }
             n=0;
+            var rata=document.getElementsByClassName("Roedor");
+            while (n<rata.length) {
+                rata[n].style.display="none";
+                n++;
+            }
+            n=0;
         break;
-    
+        case 'Roedor':
+        var n=0;
+        var dog = document.getElementsByClassName("Perro");
+        while (n<dog.length) {
+            dog[n].style.display="none";
+            n++;
+        }
+        n=0;
+        var cat= document.getElementsByClassName("Gato");
+        while (n<cat.length) {
+            cat[n].style.display="none";
+            n++;
+        }
+        n=0;
+        var bird = document.getElementsByClassName("Ave");
+        while (n<bird.length) {
+            bird[n].style.display="none";
+            n++;
+        }
+        n=0;
+        var fish=document.getElementsByClassName("Pez");
+        while (n<fish.length) {
+            fish[n].style.display="none";
+            n++;
+        }
+        n=0;
+        var rept=document.getElementsByClassName("Reptil");
+        while (n<rept.length) {
+            rept[n].style.display="none";
+            n++;
+        }
+        n=0;
+        var rata=document.getElementsByClassName("Roedor");
+        while (n<rata.length) {
+            rata[n].style.display="block";
+            n++;
+        }
+        n=0;
+    break;
         default:
             break;
     }
