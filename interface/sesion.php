@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -35,16 +38,16 @@
 
    
                          <article class="usuario">
-                             <input type="text" name="mail" class="username" placeholder="Correo o Usuario">
+                             <input type="text" name="mail" class="username" placeholder="Correo">
                              <input type="password" name="password" class="password" placeholder="Contraseña">
                          </article>
 
                          <article class="enviar">
-                             <input type="submit" name="Iniciar sesión" value="INICIAR SESIÓN" class="btn">
+                             <input type="submit" name="i_sesion" value="INICIAR SESIÓN" class="btn">
                          </article>
 
                          <article class="recuerdame">
-                             <label><input type="checkbox" name="Recuérdame">Recuérdame</label>
+                             <label><input type="checkbox" name="recordar">Recuérdame</label>
                              <!-- <span class="checkmark"></span> -->
                          </article>
                          <div class="ayuda">
