@@ -1,3 +1,7 @@
+function corazoncito(){
+    document.getElementById("demo").style.color = "red";
+}
+
 function buscar_ajax(cadena){
     $.ajax({
         type: 'POST',

@@ -35,19 +35,20 @@
 
     if(isset($_COOKIE['user'])){
 
-        echo<<<abc
+        echo <<<abc
         <article class="usuario">
-        <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
+        <input type="text" name="mail" class="username" placeholder="Correo o Usuario" value="{$_COOKIE['user']}">
         <input type="password" name="password" class="password" placeholder="Contraseña">
     </article>
 abc;
-    }
+    }else{
+
 ?>
                          <article class="usuario">
-                             <input type="text" name="mail" class="username" placeholder="Correo ó Usuario">
+                             <input type="text" name="mail" class="username" placeholder="Correo o Usuario">
                              <input type="password" name="password" class="password" placeholder="Contraseña">
                          </article>
-
+    <?php } ?>
                          <article class="enviar">
                              <input type="submit" name="Iniciar sesión" value="INICIAR SESIÓN" class="btn">
                          </article>

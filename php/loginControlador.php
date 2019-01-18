@@ -21,4 +21,9 @@
     }else {
         header("Location: ../interface/error404.php");
     }
+
+     
+    if(isset($_REQUEST['mail'])){
+        setcookie('user',$_REQUEST['mail'],time()+60*60*24*365);
+    }
 ?>
