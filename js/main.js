@@ -65,5 +65,9 @@ $(document).ready(function(){
 
 	//cerrar mensaje de cookies
 
+		$('.btn_cookies').click(function(){
+			$('.ventana_cookies').hide();
+		})
+	
   });
 
