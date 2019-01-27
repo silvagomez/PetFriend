@@ -31,6 +31,10 @@
 	?>
 	<div class="wrapper w2">
 		<main>
+			<?php
+			if (isset($_SESSION['user'])) {
+				# code...
+			echo <<<html
             <article class="adoptar">
                 <img src="../img/adopta1.png" alt="">
                 <div class="txt_adopt">
@@ -40,8 +44,19 @@
                     </p>
                 </div>
 
-            </article>
-
+			</article>
+html;
+			} else {
+				# code...
+				echo <<<html
+				<article class="nosession">
+				<div class="marco_mensajedepago">
+					<h2>DEBES INICIAR SESIÓN PARA CONTINUAR</h2>
+				</div>
+            	</article>
+html;
+			}
+			?>
 		</main>
 	</div>
 	<?php

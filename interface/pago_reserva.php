@@ -3,7 +3,16 @@
 	require_once "../php/usuario.php";
 	if (isset($_SESSION['user'])) {
 		$user=unserialize($_SESSION['user']);
-	}
+    }
+    $nom_animal=$_REQUEST['pet'];
+    //hay que parsear las fechas por que se recogen como string
+    $f_ini=$_REQUEST['f_ini'];
+    $f_fin=$_REQUEST['f_fin'];
+    $dias=abs((strtotime($f_ini)-strtotime($f_fin))/86400); // en un dia hay 60*60*24 = 86400 segundos
+    $precio=20*$dias;
+    $iva=1.21;
+    $total=$precio*$iva;
+    $total_iva= round($total-($precio),2);
 
 ?>
 <!DOCTYPE html>
@@ -27,7 +36,7 @@
 
 <body>
 	<?php
-	require_once 'header.php';
+    require_once 'header.php';
 	?>
 	<div class="wrapper w2">
 		<main>
@@ -38,15 +47,15 @@
                 <div class="fila_confirmacion fc1">
                     <div class="column_confimacion">
                         <label class="label_titulo">Animal</label><br>
-                        <label>Ramona</label>
+                        <label><?php echo $nom_animal ?></label>
                     </div>
                     <div class="column_confimacion">
                         <label class="label_titulo">Dia</label><br>
-                        <label>25/25/2020</label>
+                        <label><?php echo $f_ini." - ".$f_fin; echo " (".$dias.")";?></label>
                     </div>
                     <div class="column_confimacion">
                         <label class="label_titulo">Precio</label><br>
-                        <label>33€</label>
+                        <label><?php echo $precio; ?>€</label>
                     </div>
                 </div>
                 <div class="fila_confirmacion fc1">
@@ -56,16 +65,16 @@
                         <label class="label_titulo">Total</label>
                     </div>
                     <div class="column_confimacion">
-                        <label>33€</label><br>
-                        <label>6.93€</label><br>
-                        <label>39.93€</label><br>
+                        <label><?php echo $precio; ?>€</label><br>
+                        <label><?php echo $total_iva; ?>€</label><br>
+                        <label><?php echo $total; ?>€</label><br>
 
                     </div>
                 </div>
                 <div class="fila_confirmacion">
-                    <form class="form1" action="mensaje_pago.php" method="post">
+                    <form class="form1" action=<?php echo "mensaje_pago.php?id={$_REQUEST['id']}&ini=$f_ini&fin=$f_fin"; ?> method="post">
                         <label for="cantidad" class="label_titulo">Cantidad:</label>
-                        <input type="number" name="cantidad" placeholder="39.93€">
+                        <input type="number" name="cantidad" placeholder="<?php echo $total."€" ?>" step="any" required>
                         <label for="nombre" class="label_titulo">Nombre en la tarjeta: *</label>
                         <input type="text" name="nombre" placeholder="Nombre">
                         <label for="ntarjeta" class="label_titulo">Número de la tarjeta: *</label>

@@ -1,9 +1,29 @@
 <?php
 	session_start();
 	require_once "../php/usuario.php";
+	require_once "../php/conexion.php";
 	if (isset($_SESSION['user'])) {
 		$user=unserialize($_SESSION['user']);
 	}
+
+	$id_animal=$_REQUEST['id'];
+	$id_user=$user->id_usuario;
+	$tiempo_ini=$_REQUEST['ini'];
+	$tiempo_fin=$_REQUEST['fin'];
+	$cantidad=$_REQUEST['cantidad'];
+	$numero=rand(10000,99999);
+
+	$conexion=Conexion::getConexion();
+	$q1=<<<sql
+	INSERT INTO pago (id_pago, tipo_pago, cantidad) VALUES ('$numero', 'Transacción online', '$cantidad');
+sql;
+	$q2=<<<sql
+	INSERT INTO alquiler (tiempo_ini, tiempo_fin, id_usuariofk, id_animalfk, id_pagofk) VALUES ('$tiempo_ini', '$tiempo_fin', '$id_user', '$id_animal', '$numero');
+sql;
+	$query1=mysqli_query($conexion,$q1) or die("ERROR1");
+	$query2=mysqli_query($conexion,$q2) or die("ERROR2");
+	Conexion::cerrarConexion($conexion);
+	
 
 ?>
 <!DOCTYPE html>

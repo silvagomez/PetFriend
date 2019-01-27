@@ -1024,7 +1024,7 @@ div.txt_adopt{
     margin: 0 auto;
     padding: 2%;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.6);
@@ -1042,6 +1042,19 @@ div.txt_adopt{
 **********************************************************
 **********************************************************
 ***********************************************************/
+article.nosession{
+    /* width: 99vw;*/
+    height: 95vh;
+    background-image:url("../img/fondo_reserva2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+
+}
 article.reservar{
     /* width: 99vw;*/
     height: 95vh;
@@ -1201,6 +1214,7 @@ div.marco_mensajedepago{
     /* margin-bottom: 200px; */
     font-weight: bold;
     font-size: 2em;
+    text-align: center;
 }
 
 /*********************************************************

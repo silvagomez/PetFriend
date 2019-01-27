@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 18-01-2019 a las 08:30:54
+-- Tiempo de generación: 27-01-2019 a las 18:07:56
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.2.4
 
@@ -31,16 +31,23 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `alquiler`;
 CREATE TABLE IF NOT EXISTS `alquiler` (
   `id_alquiler` int(11) NOT NULL AUTO_INCREMENT,
-  `tiempo_ini` datetime NOT NULL,
-  `tiempo_fin` datetime NOT NULL,
-  `id_usuariokf` int(11) NOT NULL,
-  `ide_animalfk` int(11) NOT NULL,
+  `tiempo_ini` date NOT NULL,
+  `tiempo_fin` date NOT NULL,
+  `id_usuariofk` int(11) NOT NULL,
+  `id_animalfk` int(11) NOT NULL,
   `id_pagofk` int(11) NOT NULL,
   PRIMARY KEY (`id_alquiler`),
-  KEY `id_usuariokf` (`id_usuariokf`,`ide_animalfk`,`id_pagofk`),
-  KEY `ide_animalfk` (`ide_animalfk`),
-  KEY `id_pagofk` (`id_pagofk`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `ide_animalfk` (`id_animalfk`),
+  KEY `id_usuariokf` (`id_usuariofk`) USING BTREE,
+  KEY `alquiler_ibfk_3` (`id_pagofk`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `alquiler`
+--
+
+INSERT INTO `alquiler` (`id_alquiler`, `tiempo_ini`, `tiempo_fin`, `id_usuariofk`, `id_animalfk`, `id_pagofk`) VALUES
+(4, '2019-01-29', '2019-01-31', 2, 27, 49051);
 
 -- --------------------------------------------------------
 
@@ -107,7 +114,14 @@ CREATE TABLE IF NOT EXISTS `pago` (
   `tipo_pago` varchar(50) NOT NULL,
   `cantidad` int(11) NOT NULL,
   PRIMARY KEY (`id_pago`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49052 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `pago`
+--
+
+INSERT INTO `pago` (`id_pago`, `tipo_pago`, `cantidad`) VALUES
+(49051, 'TransacciÃ³n online', 48);
 
 -- --------------------------------------------------------
 
@@ -152,8 +166,8 @@ INSERT INTO `usuario` (`id_usuario`, `nombre`, `apellido`, `mail`, `fecha_nacimi
 -- Filtros para la tabla `alquiler`
 --
 ALTER TABLE `alquiler`
-  ADD CONSTRAINT `alquiler_ibfk_1` FOREIGN KEY (`ide_animalfk`) REFERENCES `animal` (`id_animal`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `alquiler_ibfk_2` FOREIGN KEY (`id_usuariokf`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `alquiler_ibfk_1` FOREIGN KEY (`id_animalfk`) REFERENCES `animal` (`id_animal`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `alquiler_ibfk_2` FOREIGN KEY (`id_usuariofk`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `alquiler_ibfk_3` FOREIGN KEY (`id_pagofk`) REFERENCES `pago` (`id_pago`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 

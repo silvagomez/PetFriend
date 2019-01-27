@@ -4,8 +4,7 @@
 	if (isset($_SESSION['user'])) {
 		$user=unserialize($_SESSION['user']);
 	}
-	$pet=$_REQUEST['pet'];
-	$id=$_REQUEST['id'];
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,28 +36,46 @@
 	?>
 	<div class="wrapper w2">
 		<main>
-            <article class="reservar">
-				<div class="marco_reserva">
-					<form class="contenido_reserva" action="pago_reserva.php" method="post">
-						<div class="column_reserva">
-							<label>Compañero *</label>
-							<input type="text" name="" value="<?php echo $pet; ?>">
-						</div>
-						<div class="column_reserva">
-							<label for="fecha">Inicio *</label>
-							<input autocomplete="off" placeholder="dd/mm/aa" id="start-date" name="" value="" class="datepicker calendar" >
-						</div>
-						<div class="column_reserva">
-							<label>Fin *</label>
-							<input  autocomplete="off"  placeholder="dd/mm/aa" id="end-date" name="" value=""  class="datepicker2 calendar">
-						</div>
-						<div class="column_reserva2">
-							<input type="submit" name=""  value="RESERVAR" class="inpunt_basico2">
-						</div>
-					</form>
+		<?php
+			if (isset($_SESSION['user'])) {
+				# code...
+				$pet=$_REQUEST['pet'];
+				$id=$_REQUEST['id'];
+				echo <<<html
+				<article class="reservar">
+					<div class="marco_reserva">
+						<form class="contenido_reserva" action="pago_reserva.php?id={$_REQUEST['id']}" method="post">
+							<div class="column_reserva">
+								<label>Compañero *</label>
+								<input type="text" name="pet" value="$pet">
+							</div>
+							<div class="column_reserva">
+								<label for="fecha">Inicio *</label>
+								<input autocomplete="off" placeholder="aa-mm-dd" id="start-date" name="f_ini" value="" class="datepicker calendar" >
+							</div>
+							<div class="column_reserva">
+								<label>Fin *</label>
+								<input  autocomplete="off"  placeholder="aa-mm-dd" id="end-date" name="f_fin" value=""  class="datepicker2 calendar">
+							</div>
+							<div class="column_reserva2">
+								<input type="submit" name=""  value="RESERVAR" class="inpunt_basico2">
+							</div>
+						</form>
+					</div>
+				</article>
+				<script src="../js/calendario.js"></script>
+html;
+			} else {
+				# code...
+				echo <<<html
+				<article class="nosession">
+				<div class="marco_mensajedepago">
+					<h2>DEBES INICIAR SESIÓN PARA CONTINUAR</h2>
 				</div>
             </article>
-			<script src="../js/calendario.js"></script>
+html;
+			}
+		?>
 		</main>
 	</div>
 	<?php

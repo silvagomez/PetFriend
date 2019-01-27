@@ -144,9 +144,12 @@
                                 <p>Id_pago</p>
                             </div>
                             <div class="bd_row brtitulo bda">
-                                <p>Id_alquiler</p>
+                                <p>Cantidad</p>
                             </div>
                         </div>
+						<?php
+							require_once "../php/list_reservas.php";
+							?>
 					
 				</section>
 
