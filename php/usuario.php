@@ -60,14 +60,14 @@ sql;
         }
 
         //Creamos la función createUser para crear los usuarios
-        public static function createUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password){
+        public static function createUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password,$img){
 
             //Metemos en la variable conexión la llamada a la class Conexion de conexion.php y usamos el método getConexion()
             $conexion=Conexion::getConexion();
 
             //Ahora vamos hacer un insert a la bd
             $q=<<<sql
-            INSERT INTO usuario(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password')
+            INSERT INTO usuario(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password, img) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password','$img')
 sql;
             $conexion->query($q) or die("ERRORRRR");
 

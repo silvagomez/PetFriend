@@ -13,7 +13,12 @@
     $cp = $_REQUEST['cp'];
     $nom_user = $_REQUEST['nom_user'];
     $password = $_REQUEST['password'];
-    $img = $_REQUEST['img'];
+    $imagen = $_FILES['imagen'];
+    $img = "../img/usuarios/".$imagen['name'];
+
+    $tem_name = $imagen['tmp_name'];
+
+    move_uploaded_file($tem_name, "../img/usuarios/".$imagen['name']);
 
     require_once("usuario.php");
 

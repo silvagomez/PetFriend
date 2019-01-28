@@ -25,7 +25,7 @@
 			</div>
 			<section class="pantalla_central pa1">
 
-				<form class="" action="../php/altaAnimalControlador.php" method="post">
+				<form class="" action="../php/altaAnimalControlador.php" method="post" enctype="multipart/form-data">
 
 					<article class="titulo_central">
 						<h2>AGREGAR UN ANIMAL A LA BBDD</h2>
@@ -63,7 +63,17 @@
 							<input type="text" name="sexo" class="inpunt_basico" placeholder="sexo" required>
 						</div>
 
+						<div class="div_datos">
+							<label>Imagen</label>
+							<br>
+							<input type="file" name="img" class="inpunt_basico"  required>
+						</div>
 						
+						<div class="div_datos">
+							<label>Imagen de Perfil</label>
+							<br>
+							<input type="file" name="img_perfil" class="inpunt_basico"  >
+						</div>
 						<input type="submit" name="crear_animal" value="CREAR UN ANIMAL" class="btn">
 					</article>
 				</form>

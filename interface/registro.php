@@ -25,7 +25,7 @@
 			</div>
 			<section class="pantalla_central pa1">
 
-				<form class="" action="../php/altaUserControlador.php" method="post">
+				<form class="" action="../php/altaUserControlador.php" method="post" enctype="multipart/form-data">
 
 					<article class="titulo_central">
 						<h2>CREAR UNA CUENTA</h2>
@@ -167,13 +167,13 @@
 						<div class="div_datos">
 							<label>Confirmar contraseña</label>
 							<br>
-							<input type="fipasswordle" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" accept="image/png, image/jpeg">
+							<input type="password" name="confirm_password" class="inpunt_basico" placeholder="Confirmar contraseña" accept="image/png, image/jpeg">
 						</div>
 
 						<div class="div_datos">
 							<label>Añade una imagen de perfil</label>
 							<br>
-							<input type="file" name="img_perfil" class="inpunt_basico" accept="image/png, image/jpeg">
+							<input type="file" name="imagen" class="inpunt_basico" accept="image/png, image/jpeg">
 						</div>
 
 						<div class="terminos">
