@@ -4,6 +4,8 @@
     $mail = $_REQUEST['mail'];
     $password = $_REQUEST['password'];
 
+    $password=md5($password);
+
     $usuario = Usuario::login($mail,$password);
 
     if ($usuario->mail != null && $usuario->mail !='') {
@@ -19,15 +21,15 @@
 
         }else {
             //usuarios
-            if($_REQUEST['recordar']=="recordar"){
-                setcookie("pet","$mail", time() +60*60*24*365);
-                }
+            // if($_REQUEST['recordar']=="recordar"){
+            //     setcookie("pet","$mail", time() +60*60*24*365);
+            //     }
             header("Location: ../interface/perfil.php");
         }
 
     }else {
         //no usuarios registrados
-        header("Location: ../interface/error404.php");
+        header("Location: ../interface/sesion.php?error=pass");
     }
 
      

@@ -46,9 +46,15 @@
                          <article class="titulo_sesion">
                              <h2>INICIAR SESIÓN</h2>
                          </article>
-
-
-   
+                        <?php
+                            if (isset($_REQUEST['error'])) {
+                                echo <<<html
+                                <article class="titulo_sesion">
+                                <p>Error en el correo ó contraseña</p>
+                                </article>
+html;
+                            }
+                        ?>
                          <article class="usuario">
                              <input type="text" name="mail" class="username" placeholder="Correo">
                              <input type="password" name="password" class="password" placeholder="Contraseña">

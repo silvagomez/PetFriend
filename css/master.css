@@ -789,6 +789,13 @@ article.titulo_sesion h2 {
     font-weight: 450;
 }
 
+article.titulo_sesion p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+
 article.usuario {
     margin-top: 20px;
 }
@@ -815,7 +822,7 @@ input.btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 75%;
     height: 55px;
     font-weight: bold;
@@ -1457,7 +1464,20 @@ div.brtitulo{
 div.bda{
     width: 2%;
 }
-
+.btn_basic_add{
+    float: right;
+    background-color: #BD94C4;
+    border: none;
+    color: white;
+    height: 47px;
+    width: 20%;
+    box-shadow: 0px 1px 3px #404041;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/*******/
 article.ventana_cookies{
     background-color: #000000b8;
     position: fixed;

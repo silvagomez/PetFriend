@@ -18,6 +18,8 @@
 
     $tem_name = $imagen['tmp_name'];
 
+    $password=md5($password);
+
     move_uploaded_file($tem_name, "../img/usuarios/".$imagen['name']);
 
     require_once("usuario.php");

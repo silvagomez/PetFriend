@@ -67,3 +67,11 @@ function eliminar_cuenta(mail) {
         
     }
 }
+
+function eliminar_animal(id_animal) {
+    if (confirm('Confirma eliminar animal')) {
+        location.href ="../php/eliminar_animal.php?ani="+id_animal+"";
+    } else {
+        
+    }
+}

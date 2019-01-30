@@ -15,6 +15,8 @@
         $nom_user = $_REQUEST['nom_user'];
         $password = $_REQUEST['password'];
 
+        $password=md5($password);
+
         require_once("usuario.php");
 
         Usuario::modificarUser($nombre, $apellido, $mail, $fecha_nacimiento, $dni_pass, $sexo, $telefono, $direccion, $provincia, $cp, $nom_user, $password);
