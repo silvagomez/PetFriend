@@ -1,5 +1,11 @@
-
 <?php
+if (isset($_REQUEST['acepto_c'])) {
+    $fecha=date("Y-n-j");
+    echo $fecha;
+    setcookie("petfriend",$fecha,time()+60*60*24*365);
+	header ("Refresh:0, url=home.php");
+}
+	/**/
 	session_start();
 	require_once "../php/usuario.php";
 	if (isset($_SESSION['user'])) {
@@ -31,7 +37,22 @@
 <body>
 	<?php
 	require_once 'header.php';
-	require_once 'msj_cookies.php';
+	if (!isset($_COOKIE['petfriend'])) {
+		# code...
+		echo<<<html
+		<article class="ventana_cookies">
+				<div class="p_cookies">
+					<p class="mensaje_cookies">Al continuar navegando en PetFriend, aceptas el uso de cookies y otras tecnologías para procesar tus datos personales con el fin de mejorar y personalizar tu experiencia en los sitios del portafolio de PetFriend, incluidos PetFriend y terceros que proporcionen publicidad personalizada para ti, tanto dentro como fuera de nuestros sitios web. </p>
+				</div>
+				<div class="b_cookies">
+					<form action="home.php" method="post">
+						<input type="submit" value="Aceptar" class="btn_cookies" name="acepto_c">				
+					</form>
+				</div>			
+</article>
+html;
+}
+	
 	?>
 	<div class="wrapper w2">
 		<main>
@@ -107,19 +128,6 @@
 							</div>
 							<div class="reset"></div>
 						</div>
-			</article>
-
-			<article class="ventana_cookies">
-				<div class="p_cookies">
-					<p class="mensaje_cookies">Al continuar navegando en PetFriend, aceptas el uso de cookies y otras tecnologías para procesar tus datos personales con el fin de mejorar y personalizar tu experiencia en los sitios del portafolio de PetFiend, incluidos PetFriend y terceros que proporcionen publicidad personalizada para ti, tanto dentro como fuera de nuestros sitios web. Además, los terceros con los que nos asociamos pueden almacenar cookies en tu dispositivo y usar tecnologías similares con el fin de recoger y usar cierta información para la personalización de la publicidad y mediciones de datos de audiencia y datos analíticos. Si usted desea más información, pinche en Saber más.</p>
-				</div>
-				<div class="b_cookies">
-					<input type="submit" name="aceptar" value="Aceptar">
-					<br>
-					<input type="submit" name="saber mas" value="Saber más">
-					
-				</div>
-				
 			</article>
 
 		</main>

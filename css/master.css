@@ -793,7 +793,8 @@ article.titulo_sesion p{
     text-align: center;
     padding-top: 30px;
     font-size: 15px;
-    color: #fff;
+    color:#000;
+    font-weight: 600;
 }
 
 article.usuario {
@@ -1505,7 +1506,7 @@ article.ventana_cookies{
         text-align: center;
      }
 
-     button.btn_cookies{
+     input.btn_cookies{
         width: 50%;
         height: 41px;
         margin-top: 60px;

@@ -69,7 +69,7 @@ sql;
             $q=<<<sql
             INSERT INTO usuario(nombre, apellido, mail, fecha_nacimiento, dni_pass, sexo, telefono, direccion, provincia, cp, nom_user, password, img) VALUES ('$nombre','$apellido','$mail','$fecha_nacimiento','$dni_pass','$sexo','$telefono','$direccion','$provincia','$cp','$nom_user','$password','$img')
 sql;
-            $conexion->query($q) or die("ERRORRRR");
+            $conexion->query($q) or die(header("Location: ../interface/registro.php?error=mail"));
 
             //Cerramos conexión
             Conexion::cerrarConexion($conexion);

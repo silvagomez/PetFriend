@@ -30,6 +30,15 @@
 					<article class="titulo_central">
 						<h2>CREAR UNA CUENTA</h2>
 					</article>
+					<?php
+						if (isset($_REQUEST['error'])) {
+							echo<<<html
+							<article class="titulo_sesion">
+                                <p><strong>El e-mail ingresado ya existe, pruebe con otro</strong></p>
+                                </article>
+html;
+						}
+					?>
 
 
 					<article class="datos">

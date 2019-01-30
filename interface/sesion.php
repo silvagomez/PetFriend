@@ -50,7 +50,7 @@
                             if (isset($_REQUEST['error'])) {
                                 echo <<<html
                                 <article class="titulo_sesion">
-                                <p>Error en el correo ó contraseña</p>
+                                <p>Error en el correo o contraseña</p>
                                 </article>
 html;
                             }

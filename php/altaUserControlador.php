@@ -1,5 +1,4 @@
 <?php
-
     //Recogemos los valores de los inpunt y los ingresamos en las variables;
     $nombre = $_REQUEST['nombre'];
     $apellido = $_REQUEST['apellido'];
