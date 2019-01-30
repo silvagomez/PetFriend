@@ -84,7 +84,7 @@ sql;
 
                 //Ahora vamos hacer un update a la bd de los nuevos datos
                 $q=<<<sql
-                UPDATE usuario SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$fecha_nacimiento', dni_pass='$dni_pass', sexo='$sexo', telefono='$telefono', direccion='$direccion', provincia='$provincia', cp='$cp', nom_user='$nom_user' WHERE mail='$mail'
+                UPDATE usuario SET nombre='$nombre', apellido='$apellido', fecha_nacimiento='$fecha_nacimiento', dni_pass='$dni_pass', sexo='$sexo', telefono='$telefono', direccion='$direccion', provincia='$provincia', cp='$cp', nom_user='$nom_user', password='$password'  WHERE mail='$mail'
 sql;
                 //Realiza la sentencia
                 $resultado=$conexion->query($q) or die ("ERROR");

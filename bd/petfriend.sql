@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 27-01-2019 a las 18:07:56
+-- Tiempo de generación: 30-01-2019 a las 09:43:58
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.2.4
 
@@ -40,14 +40,16 @@ CREATE TABLE IF NOT EXISTS `alquiler` (
   KEY `ide_animalfk` (`id_animalfk`),
   KEY `id_usuariokf` (`id_usuariofk`) USING BTREE,
   KEY `alquiler_ibfk_3` (`id_pagofk`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `alquiler`
 --
 
 INSERT INTO `alquiler` (`id_alquiler`, `tiempo_ini`, `tiempo_fin`, `id_usuariofk`, `id_animalfk`, `id_pagofk`) VALUES
-(4, '2019-01-29', '2019-01-31', 2, 27, 49051);
+(4, '2019-01-29', '2019-01-31', 2, 27, 49051),
+(5, '2019-02-11', '2019-02-25', 2, 14, 21330),
+(6, '2019-02-13', '2019-02-15', 2, 30, 71188);
 
 -- --------------------------------------------------------
 
@@ -66,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `animal` (
   `imagen` varchar(500) DEFAULT NULL,
   `img_perfil` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_animal`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `animal`
@@ -114,14 +116,16 @@ CREATE TABLE IF NOT EXISTS `pago` (
   `tipo_pago` varchar(50) NOT NULL,
   `cantidad` int(11) NOT NULL,
   PRIMARY KEY (`id_pago`)
-) ENGINE=InnoDB AUTO_INCREMENT=49052 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=71189 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `pago`
 --
 
 INSERT INTO `pago` (`id_pago`, `tipo_pago`, `cantidad`) VALUES
-(49051, 'TransacciÃ³n online', 48);
+(21330, 'TransacciÃ³n online', 339),
+(49051, 'TransacciÃ³n online', 48),
+(71188, 'TransacciÃ³n online', 49);
 
 -- --------------------------------------------------------
 
@@ -146,8 +150,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `password` varchar(50) NOT NULL,
   `img` text NOT NULL,
   PRIMARY KEY (`id_usuario`),
-  UNIQUE KEY `mail` (`mail`,`dni_pass`,`nom_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  UNIQUE KEY `mail` (`mail`,`dni_pass`,`nom_user`),
+  UNIQUE KEY `mail_2` (`mail`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -155,8 +160,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 INSERT INTO `usuario` (`id_usuario`, `nombre`, `apellido`, `mail`, `fecha_nacimiento`, `dni_pass`, `sexo`, `telefono`, `direccion`, `provincia`, `cp`, `nom_user`, `password`, `img`) VALUES
 (1, 'admin', 'petfriend', 'admi.petfriend@gmail.com', '1984-01-08', '12345678x', 'mujer', 1231231234, 'direccion1', 'alava', 1400, 'administrador', 'romaol2', ''),
-(2, 'diego', 'silva', 'silva@gmail.com', '2016-01-05', '147852369q', 'Hombre', 987654565, 'dire2', 'Vizcaya', 54786, 'dieguito', 'romaol2', '../img/usuarios/op1.png'),
-(3, 'queen', 'calva', 'queen@gmail.com', '2000-01-28', '3214568d', 'Hombre', 541236547, 'dire3', 'vizcaya', 56984, 'queen', 'romaol2', '');
+(2, 'diego', 'gomez', 'silva@gmail.com', '2016-01-05', '147852369q', 'Hombre', 1231231234, 'dire2', 'Vizcaya', 54786, 'dieguito', 'romaol2', '../img/usuarios/op1.png'),
+(3, 'queen', 'calva', 'queen@gmail.com', '2000-01-28', '3214568d', 'Hombre', 541236547, 'dire3', 'vizcaya', 56984, 'queen', 'romaol2', ''),
+(4, 'camilo', 'gomez', 'gomez@gmail.com', '2019-01-24', '128284', 'mujer', 1231231234, 'uri', 'valencia', 1256, 'g', 'f128661da4ea8b6826b507e3af4ce529', '../img/usuarios/');
 
 --
 -- Restricciones para tablas volcadas

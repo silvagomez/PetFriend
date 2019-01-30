@@ -121,7 +121,7 @@
 							<div class="column">
 								<div class="div_datosp">
 									<label class="label_perfil">Contraseña</label>
-									<input type="password" name="password" class="input_datos" value="<?php echo $user->password ?>">
+									<input type="password" name="password" class="input_datos" value="<?php ?>">
 								</div>
 								<div class="div_datosp">
 									<label class="label_perfil">Confirmar contraseña</label>
