@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 30-01-2019 a las 09:43:58
+-- Tiempo de generación: 31-01-2019 a las 11:14:53
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.2.4
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `animal` (
   `imagen` varchar(500) DEFAULT NULL,
   `img_perfil` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_animal`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `animal`
@@ -152,17 +152,19 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`id_usuario`),
   UNIQUE KEY `mail` (`mail`,`dni_pass`,`nom_user`),
   UNIQUE KEY `mail_2` (`mail`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombre`, `apellido`, `mail`, `fecha_nacimiento`, `dni_pass`, `sexo`, `telefono`, `direccion`, `provincia`, `cp`, `nom_user`, `password`, `img`) VALUES
-(1, 'admin', 'petfriend', 'admi.petfriend@gmail.com', '1984-01-08', '12345678x', 'mujer', 1231231234, 'direccion1', 'alava', 1400, 'administrador', 'romaol2', ''),
-(2, 'diego', 'gomez', 'silva@gmail.com', '2016-01-05', '147852369q', 'Hombre', 1231231234, 'dire2', 'Vizcaya', 54786, 'dieguito', 'romaol2', '../img/usuarios/op1.png'),
-(3, 'queen', 'calva', 'queen@gmail.com', '2000-01-28', '3214568d', 'Hombre', 541236547, 'dire3', 'vizcaya', 56984, 'queen', 'romaol2', ''),
-(4, 'camilo', 'gomez', 'gomez@gmail.com', '2019-01-24', '128284', 'mujer', 1231231234, 'uri', 'valencia', 1256, 'g', 'f128661da4ea8b6826b507e3af4ce529', '../img/usuarios/');
+(1, 'admin', 'petfriend', 'admi.petfriend@gmail.com', '1984-01-08', '12345678x', 'mujer', 1231231234, 'direccion1', 'alava', 1400, 'administrador', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', ''),
+(2, 'diego', 'gomez', 'silva@gmail.com', '2016-01-05', '147852369q', 'Hombre', 1231231234, 'dire2', 'Vizcaya', 54786, 'dieguito', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', '../img/usuarios/op1.png'),
+(3, 'queen', 'calva', 'queen@gmail.com', '2000-01-28', '3214568d', 'Hombre', 541236547, 'dire3', 'vizcaya', 56984, 'queen', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', ''),
+(4, 'camilo', 'gomez', 'gomez@gmail.com', '2019-01-24', '128284', 'mujer', 1231231234, 'uri', 'valencia', 1256, 'g', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', '../img/usuarios/'),
+(9, 'allen', 'allen', 'allen@gmail.com', '2019-01-30', '1234', 'mujer', 1231231234, 'calle', 'ciudadreal', 125364, 'Allen', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', '../img/usuarios/'),
+(10, 'carlos', 's', 'carlos@gmail.com', '2019-01-15', '1354', 'hombre', 1231231234, 'das', 'girona', 354, 'carlos', 'cc2db4b8a1cb09cd2c2859d13fc0d7bf', '../img/usuarios/');
 
 --
 -- Restricciones para tablas volcadas
