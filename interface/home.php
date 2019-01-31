@@ -58,13 +58,13 @@ html;
 		<main>
 			<article class="slideshow">
 				<ul class="slider">
-					<li><img src="../img/slide1.png" alt=""></li>
-					<li><img src="../img/slide2.png" alt=""></li>
-					<li><img src="../img/slide3.png" alt=""></li>
-					<li><img src="../img/slide4.png" alt=""></li>
-					<li><img src="../img/slide5.png" alt=""></li>
-					<li><img src="../img/slide6.png" alt=""></li>
-					<li><img src="../img/slide7.png" alt=""></li>
+					<li><img src="../img/slide1.jpg" alt=""></li>
+					<li><img src="../img/slide2.jpg" alt=""></li>
+					<li><img src="../img/slide3.jpg" alt=""></li>
+					<li><img src="../img/slide4.jpg" alt=""></li>
+					<li><img src="../img/slide5.jpg" alt=""></li>
+					<li><img src="../img/slide6.jpg" alt=""></li>
+					<li><img src="../img/slide7.jpg" alt=""></li>
 				</ul>
 
 				<ol class="pagination"></ol>
