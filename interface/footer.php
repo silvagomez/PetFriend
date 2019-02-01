@@ -31,8 +31,8 @@ echo <<<abc
             <div class="redes_sociales">
                 <p class="titulillo">Síguenos en nuestras redes sociales</p>
                 <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/petfriend_bilbao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/petfriendbilbao"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                 <a href="https://www.snapchat.com/"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
 
             </div>
