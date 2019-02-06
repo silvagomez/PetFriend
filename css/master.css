@@ -515,7 +515,7 @@ ul#mostrar{
     background-color: #5e548e;
     position: absolute;
     width: 45.8%;
-    margin: 0px 0px 0px 123px;
+    margin: 0px 0px 0px 145px;
     z-index: 5;
 }
 li.busc{
@@ -1486,7 +1486,7 @@ article.ventana_cookies{
     height: 140px;
     color: #fff;
     z-index: 5;
-    margin-top: 486px;  
+    margin-top: 580px;  
     display: flex;
  }
      div.p_cookies{
